@@ -1,0 +1,19 @@
+{
+ "method": "m0_baseline",
+ "video": "vidd_3",
+ "seed": 42,
+ "fit_s": 0.0,
+ "yellow": {
+  "lower_hsv": [
+   0,
+   70,
+   170
+  ],
+  "upper_hsv": [
+   255,
+   255,
+   255
+  ]
+ },
+ "white": null
+}

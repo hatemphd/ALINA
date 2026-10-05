@@ -1,0 +1,1402 @@
+{
+ "00001": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 4.259
+ },
+ "00002": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 4.059
+ },
+ "00003": {
+  "corners": {
+   "bottom_left": [
+    643,
+    729
+   ],
+   "top_left": [
+    849,
+    664
+   ],
+   "top_right": [
+    1051,
+    664
+   ],
+   "bottom_right": [
+    1219,
+    729
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 746,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.018
+ },
+ "00004": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.023
+ },
+ "00005": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.02
+ },
+ "00006": {
+  "corners": {
+   "bottom_left": [
+    643,
+    729
+   ],
+   "top_left": [
+    849,
+    664
+   ],
+   "top_right": [
+    1051,
+    664
+   ],
+   "bottom_right": [
+    1219,
+    729
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 746,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.019
+ },
+ "00007": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.025
+ },
+ "00008": {
+  "corners": {
+   "bottom_left": [
+    643,
+    729
+   ],
+   "top_left": [
+    849,
+    664
+   ],
+   "top_right": [
+    1051,
+    664
+   ],
+   "bottom_right": [
+    1219,
+    729
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 746,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.019
+ },
+ "00009": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.019
+ },
+ "00010": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.024
+ },
+ "00011": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.02
+ },
+ "00012": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.019
+ },
+ "00013": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.023
+ },
+ "00014": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.019
+ },
+ "00015": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.02
+ },
+ "00016": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.024
+ },
+ "00017": {
+  "corners": {
+   "bottom_left": [
+    643,
+    730
+   ],
+   "top_left": [
+    849,
+    665
+   ],
+   "top_right": [
+    1051,
+    665
+   ],
+   "bottom_right": [
+    1219,
+    730
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 747,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.02
+ },
+ "00018": {
+  "corners": {
+   "bottom_left": [
+    643,
+    731
+   ],
+   "top_left": [
+    849,
+    666
+   ],
+   "top_right": [
+    1051,
+    666
+   ],
+   "bottom_right": [
+    1219,
+    731
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 748,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.02
+ },
+ "00019": {
+  "corners": {
+   "bottom_left": [
+    643,
+    731
+   ],
+   "top_left": [
+    849,
+    666
+   ],
+   "top_right": [
+    1051,
+    666
+   ],
+   "bottom_right": [
+    1219,
+    731
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 748,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.026
+ },
+ "00020": {
+  "corners": {
+   "bottom_left": [
+    643,
+    731
+   ],
+   "top_left": [
+    849,
+    666
+   ],
+   "top_right": [
+    1051,
+    666
+   ],
+   "bottom_right": [
+    1219,
+    731
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 748,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.021
+ },
+ "01060": {
+  "corners": {
+   "bottom_left": [
+    643,
+    720
+   ],
+   "top_left": [
+    849,
+    655
+   ],
+   "top_right": [
+    1051,
+    655
+   ],
+   "bottom_right": [
+    1219,
+    720
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 737,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.021
+ },
+ "01061": {
+  "corners": {
+   "bottom_left": [
+    643,
+    719
+   ],
+   "top_left": [
+    849,
+    654
+   ],
+   "top_right": [
+    1051,
+    654
+   ],
+   "bottom_right": [
+    1219,
+    719
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 736,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.025
+ },
+ "01062": {
+  "corners": {
+   "bottom_left": [
+    968,
+    719
+   ],
+   "top_left": [
+    1004,
+    654
+   ],
+   "top_right": [
+    1205,
+    654
+   ],
+   "bottom_right": [
+    1544,
+    719
+   ]
+  },
+  "line": {
+   "slope": 2.613940715789795,
+   "intercept": -594.7569580078125
+  },
+  "nose_y": 736,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.022
+ },
+ "01063": {
+  "corners": {
+   "bottom_left": [
+    643,
+    719
+   ],
+   "top_left": [
+    849,
+    654
+   ],
+   "top_right": [
+    1051,
+    654
+   ],
+   "bottom_right": [
+    1219,
+    719
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 736,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.019
+ },
+ "01064": {
+  "corners": {
+   "bottom_left": [
+    643,
+    718
+   ],
+   "top_left": [
+    849,
+    653
+   ],
+   "top_right": [
+    1051,
+    653
+   ],
+   "bottom_right": [
+    1219,
+    718
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 735,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.025
+ },
+ "01065": {
+  "corners": {
+   "bottom_left": [
+    643,
+    719
+   ],
+   "top_left": [
+    849,
+    654
+   ],
+   "top_right": [
+    1051,
+    654
+   ],
+   "bottom_right": [
+    1219,
+    719
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 736,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.02
+ },
+ "01066": {
+  "corners": {
+   "bottom_left": [
+    643,
+    718
+   ],
+   "top_left": [
+    849,
+    653
+   ],
+   "top_right": [
+    1051,
+    653
+   ],
+   "bottom_right": [
+    1219,
+    718
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 735,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.018
+ },
+ "01067": {
+  "corners": {
+   "bottom_left": [
+    643,
+    718
+   ],
+   "top_left": [
+    849,
+    653
+   ],
+   "top_right": [
+    1051,
+    653
+   ],
+   "bottom_right": [
+    1219,
+    718
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 735,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.024
+ },
+ "01068": {
+  "corners": {
+   "bottom_left": [
+    643,
+    718
+   ],
+   "top_left": [
+    849,
+    653
+   ],
+   "top_right": [
+    1051,
+    653
+   ],
+   "bottom_right": [
+    1219,
+    718
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 735,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.02
+ },
+ "09000": {
+  "corners": {
+   "bottom_left": [
+    643,
+    696
+   ],
+   "top_left": [
+    849,
+    631
+   ],
+   "top_right": [
+    1051,
+    631
+   ],
+   "bottom_right": [
+    1219,
+    696
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 713,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.019
+ },
+ "09001": {
+  "corners": {
+   "bottom_left": [
+    326,
+    696
+   ],
+   "top_left": [
+    348,
+    631
+   ],
+   "top_right": [
+    549,
+    631
+   ],
+   "bottom_right": [
+    902,
+    696
+   ]
+  },
+  "line": {
+   "slope": 2.833911180496216,
+   "intercept": -1329.7491455078125
+  },
+  "nose_y": 713,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.025
+ },
+ "09002": {
+  "corners": {
+   "bottom_left": [
+    332,
+    697
+   ],
+   "top_left": [
+    357,
+    632
+   ],
+   "top_right": [
+    559,
+    632
+   ],
+   "bottom_right": [
+    908,
+    697
+   ]
+  },
+  "line": {
+   "slope": 2.778425693511963,
+   "intercept": -1287.955322265625
+  },
+  "nose_y": 714,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.02
+ },
+ "09003": {
+  "corners": {
+   "bottom_left": [
+    643,
+    697
+   ],
+   "top_left": [
+    849,
+    632
+   ],
+   "top_right": [
+    1051,
+    632
+   ],
+   "bottom_right": [
+    1219,
+    697
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 714,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.02
+ },
+ "09004": {
+  "corners": {
+   "bottom_left": [
+    376,
+    698
+   ],
+   "top_left": [
+    399,
+    633
+   ],
+   "top_right": [
+    600,
+    633
+   ],
+   "bottom_right": [
+    952,
+    698
+   ]
+  },
+  "line": {
+   "slope": 2.8243603706359863,
+   "intercept": -1278.148681640625
+  },
+  "nose_y": 715,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.025
+ },
+ "09005": {
+  "corners": {
+   "bottom_left": [
+    424,
+    698
+   ],
+   "top_left": [
+    571,
+    633
+   ],
+   "top_right": [
+    772,
+    633
+   ],
+   "bottom_right": [
+    1000,
+    698
+   ]
+  },
+  "line": {
+   "slope": 0.9130482077598572,
+   "intercept": 103.47711181640625
+  },
+  "nose_y": 715,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.021
+ },
+ "09006": {
+  "corners": {
+   "bottom_left": [
+    353,
+    699
+   ],
+   "top_left": [
+    381,
+    634
+   ],
+   "top_right": [
+    582,
+    634
+   ],
+   "bottom_right": [
+    929,
+    699
+   ]
+  },
+  "line": {
+   "slope": 2.7472267150878906,
+   "intercept": -1250.0709228515625
+  },
+  "nose_y": 716,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.019
+ },
+ "09007": {
+  "corners": {
+   "bottom_left": [
+    643,
+    700
+   ],
+   "top_left": [
+    849,
+    635
+   ],
+   "top_right": [
+    1051,
+    635
+   ],
+   "bottom_right": [
+    1219,
+    700
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 717,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.025
+ },
+ "09008": {
+  "corners": {
+   "bottom_left": [
+    340,
+    701
+   ],
+   "top_left": [
+    358,
+    636
+   ],
+   "top_right": [
+    559,
+    636
+   ],
+   "bottom_right": [
+    916,
+    701
+   ]
+  },
+  "line": {
+   "slope": 2.8959083557128906,
+   "intercept": -1373.117431640625
+  },
+  "nose_y": 718,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.02
+ },
+ "09009": {
+  "corners": {
+   "bottom_left": [
+    360,
+    701
+   ],
+   "top_left": [
+    381,
+    636
+   ],
+   "top_right": [
+    583,
+    636
+   ],
+   "bottom_right": [
+    936,
+    701
+   ]
+  },
+  "line": {
+   "slope": 2.8339145183563232,
+   "intercept": -1310.131103515625
+  },
+  "nose_y": 718,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.021
+ },
+ "09010": {
+  "corners": {
+   "bottom_left": [
+    349,
+    702
+   ],
+   "top_left": [
+    366,
+    637
+   ],
+   "top_right": [
+    568,
+    637
+   ],
+   "bottom_right": [
+    925,
+    702
+   ]
+  },
+  "line": {
+   "slope": 2.899744749069214,
+   "intercept": -1370.0426025390625
+  },
+  "nose_y": 719,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.025
+ },
+ "09011": {
+  "corners": {
+   "bottom_left": [
+    643,
+    702
+   ],
+   "top_left": [
+    849,
+    637
+   ],
+   "top_right": [
+    1051,
+    637
+   ],
+   "bottom_right": [
+    1219,
+    702
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 719,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.022
+ },
+ "09012": {
+  "corners": {
+   "bottom_left": [
+    418,
+    702
+   ],
+   "top_left": [
+    560,
+    637
+   ],
+   "top_right": [
+    761,
+    637
+   ],
+   "bottom_right": [
+    994,
+    702
+   ]
+  },
+  "line": {
+   "slope": 0.9878172278404236,
+   "intercept": 41.41796875
+  },
+  "nose_y": 719,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.02
+ },
+ "09013": {
+  "corners": {
+   "bottom_left": [
+    340,
+    702
+   ],
+   "top_left": [
+    365,
+    637
+   ],
+   "top_right": [
+    567,
+    637
+   ],
+   "bottom_right": [
+    916,
+    702
+   ]
+  },
+  "line": {
+   "slope": 2.770855665206909,
+   "intercept": -1288.783935546875
+  },
+  "nose_y": 719,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.026
+ },
+ "09014": {
+  "corners": {
+   "bottom_left": [
+    366,
+    702
+   ],
+   "top_left": [
+    379,
+    637
+   ],
+   "top_right": [
+    580,
+    637
+   ],
+   "bottom_right": [
+    942,
+    702
+   ]
+  },
+  "line": {
+   "slope": 2.966257095336914,
+   "intercept": -1399.857421875
+  },
+  "nose_y": 719,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.021
+ },
+ "09015": {
+  "corners": {
+   "bottom_left": [
+    643,
+    702
+   ],
+   "top_left": [
+    849,
+    637
+   ],
+   "top_right": [
+    1051,
+    637
+   ],
+   "bottom_right": [
+    1219,
+    702
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 719,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.019
+ },
+ "09016": {
+  "corners": {
+   "bottom_left": [
+    346,
+    702
+   ],
+   "top_left": [
+    357,
+    637
+   ],
+   "top_right": [
+    559,
+    637
+   ],
+   "bottom_right": [
+    922,
+    702
+   ]
+  },
+  "line": {
+   "slope": 2.9905993938446045,
+   "intercept": -1436.7197265625
+  },
+  "nose_y": 719,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.026
+ },
+ "09017": {
+  "corners": {
+   "bottom_left": [
+    643,
+    701
+   ],
+   "top_left": [
+    849,
+    636
+   ],
+   "top_right": [
+    1051,
+    636
+   ],
+   "bottom_right": [
+    1219,
+    701
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 718,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.022
+ },
+ "09018": {
+  "corners": {
+   "bottom_left": [
+    347,
+    701
+   ],
+   "top_left": [
+    370,
+    636
+   ],
+   "top_right": [
+    572,
+    636
+   ],
+   "bottom_right": [
+    923,
+    701
+   ]
+  },
+  "line": {
+   "slope": 2.8075802326202393,
+   "intercept": -1304.8116455078125
+  },
+  "nose_y": 718,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.02
+ },
+ "09019": {
+  "corners": {
+   "bottom_left": [
+    354,
+    701
+   ],
+   "top_left": [
+    462,
+    636
+   ],
+   "top_right": [
+    663,
+    636
+   ],
+   "bottom_right": [
+    930,
+    701
+   ]
+  },
+  "line": {
+   "slope": 1.501781702041626,
+   "intercept": -382.44085693359375
+  },
+  "nose_y": 718,
+  "fallback": false,
+  "note": "trained on 87 frames",
+  "seconds": 0.027
+ },
+ "09020": {
+  "corners": {
+   "bottom_left": [
+    643,
+    701
+   ],
+   "top_left": [
+    849,
+    636
+   ],
+   "top_right": [
+    1051,
+    636
+   ],
+   "bottom_right": [
+    1219,
+    701
+   ]
+  },
+  "line": {
+   "slope": 0.0,
+   "intercept": 960.0
+  },
+  "nose_y": 718,
+  "fallback": true,
+  "note": "unusable ROI (trained on 87 frames)",
+  "seconds": 0.022
+ }
+}

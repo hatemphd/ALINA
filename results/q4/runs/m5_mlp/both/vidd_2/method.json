@@ -1,0 +1,11 @@
+{
+ "method": "m5_mlp",
+ "video": "vidd_2",
+ "seed": 42,
+ "fit_s": 22.8,
+ "training_samples": {
+  "0": 106500,
+  "1": 26304,
+  "2": 1200
+ }
+}

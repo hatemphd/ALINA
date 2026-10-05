@@ -1,0 +1,22 @@
+{
+ "method": "m2_gmm",
+ "video": "vidd_1",
+ "seed": 42,
+ "fit_s": 0.0,
+ "yellow": {
+  "frames": 44,
+  "median_Lab": [
+   178.8,
+   134.8,
+   159.2
+  ]
+ },
+ "white": {
+  "frames": 38,
+  "median_Lab": [
+   166.0,
+   128.9,
+   130.2
+  ]
+ }
+}

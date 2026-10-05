@@ -1,0 +1,44 @@
+m1_hough/vidd_1: proposing ROIs for 1 frame(s)
+m2_kmeans/vidd_1: proposing ROIs for 1 frame(s)
+m3_vlm_corners/vidd_1: proposing ROIs for 1 frame(s)
+  m3_vlm_corners/vidd_1: proposed 1/1 (00001)
+m4_vlm_points/vidd_1: proposing ROIs for 1 frame(s)
+  m4_vlm_points/vidd_1: proposed 1/1 (00001)
+m5_ridge/vidd_1: proposing ROIs for 1 frame(s)
+  m5_ridge/vidd_1: proposed 1/1 (00001)
+m1_hough/vidd_2: proposing ROIs for 1 frame(s)
+  m1_hough/vidd_2: proposed 1/1 (00001)
+m2_kmeans/vidd_2: proposing ROIs for 1 frame(s)
+  m2_kmeans/vidd_2: proposed 1/1 (00001)
+m3_vlm_corners/vidd_2: proposing ROIs for 1 frame(s)
+  m3_vlm_corners/vidd_2: proposed 1/1 (00001)
+m4_vlm_points/vidd_2: proposing ROIs for 1 frame(s)
+  m4_vlm_points/vidd_2: proposed 1/1 (00001)
+m5_ridge/vidd_2: proposing ROIs for 1 frame(s)
+  m5_ridge/vidd_2: proposed 1/1 (00001)
+m1_hough/vidd_3: proposing ROIs for 1 frame(s)
+  m1_hough/vidd_3: proposed 1/1 (18970)
+m2_kmeans/vidd_3: proposing ROIs for 1 frame(s)
+  m2_kmeans/vidd_3: proposed 1/1 (18970)
+m3_vlm_corners/vidd_3: proposing ROIs for 1 frame(s)
+  m3_vlm_corners/vidd_3: proposed 1/1 (18970)
+m4_vlm_points/vidd_3: proposing ROIs for 1 frame(s)
+  m4_vlm_points/vidd_3: proposed 1/1 (18970)
+m5_ridge/vidd_3: proposing ROIs for 1 frame(s)
+  m5_ridge/vidd_3: proposed 1/1 (18970)
+Running ALINA: 15 runs on 4 processes
+m2_kmeans/vidd_1/first-frame: Done: 20/50 labeled, avg 5925.2ms/frame (0.17 fps), total 296.3s
+m3_vlm_corners/vidd_1/first-frame: Done: 20/50 labeled, avg 6266.8ms/frame (0.16 fps), total 313.3s
+m5_ridge/vidd_1/first-frame: Done: 7/50 labeled, avg 837.7ms/frame (1.19 fps), total 41.9s
+m4_vlm_points/vidd_1/first-frame: Done: 25/50 labeled, avg 9226.9ms/frame (0.11 fps), total 461.3s
+m1_hough/vidd_2/first-frame: Done: 39/50 labeled, avg 4532.9ms/frame (0.22 fps), total 226.6s
+m2_kmeans/vidd_2/first-frame: Done: 39/50 labeled, avg 4558.2ms/frame (0.22 fps), total 227.9s
+m4_vlm_points/vidd_2/first-frame: Done: 39/50 labeled, avg 2086.2ms/frame (0.48 fps), total 104.3s
+m3_vlm_corners/vidd_2/first-frame: Done: 39/50 labeled, avg 4021.0ms/frame (0.25 fps), total 201.0s
+m2_kmeans/vidd_3/first-frame: Done: 0/50 labeled, avg 66.2ms/frame (15.11 fps), total 3.3s
+m3_vlm_corners/vidd_3/first-frame: Done: 0/50 labeled, avg 66.9ms/frame (14.95 fps), total 3.3s
+m4_vlm_points/vidd_3/first-frame: Done: 0/50 labeled, avg 71.8ms/frame (13.93 fps), total 3.6s
+m5_ridge/vidd_3/first-frame: Done: 0/50 labeled, avg 71.4ms/frame (14.01 fps), total 3.6s
+m1_hough/vidd_3/first-frame: Done: 16/50 labeled, avg 929.3ms/frame (1.08 fps), total 46.5s
+m5_ridge/vidd_2/first-frame: Done: 38/50 labeled, avg 3722.7ms/frame (0.27 fps), total 186.1s
+m1_hough/vidd_1/first-frame: Done: 45/50 labeled, avg 15669.7ms/frame (0.06 fps), total 783.5s

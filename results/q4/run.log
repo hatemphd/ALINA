@@ -1,0 +1,46 @@
+training samples hsv/vidd_1: 58200 (class 0: 45000, class 1: 12000, class 2: 1200)
+training samples hsv/vidd_2: 91200 (class 0: 72000, class 1: 19200)
+training samples hsv/vidd_3: 75804 (class 0: 61500, class 1: 14304)
+training samples hsvlab/vidd_1: 58200 (class 0: 45000, class 1: 12000, class 2: 1200)
+training samples hsvlab/vidd_2: 91200 (class 0: 72000, class 1: 19200)
+training samples hsvlab/vidd_3: 75804 (class 0: 61500, class 1: 14304)
+training samples context/vidd_1: 58200 (class 0: 45000, class 1: 12000, class 2: 1200)
+training samples context/vidd_2: 91200 (class 0: 72000, class 1: 19200)
+training samples context/vidd_3: 75804 (class 0: 61500, class 1: 14304)
+Running 36 jobs on 10 processes
+m1_otsu/yellow/vidd_3: Done: 2/50 labeled, avg 571.0ms/frame (1.75 fps), total 28.6s
+m0_baseline/yellow/vidd_3: Done: 16/50 labeled, avg 1455.1ms/frame (0.69 fps), total 72.8s
+m1_otsu/yellow/vidd_2: Done: 29/50 labeled, avg 7234.5ms/frame (0.14 fps), total 361.7s
+m0_baseline/yellow/vidd_2: Done: 39/50 labeled, avg 7570.0ms/frame (0.13 fps), total 378.5s
+m2_gmm/yellow/vidd_2: Done: 34/50 labeled, avg 11966.3ms/frame (0.08 fps), total 598.3s
+m4_logreg/yellow/vidd_2: Done: 41/50 labeled, avg 12227.9ms/frame (0.08 fps), total 611.4s
+m1_otsu/yellow/vidd_1: Done: 43/50 labeled, avg 26123.0ms/frame (0.04 fps), total 1306.2s
+m2_gmm/yellow/vidd_3: Done: 19/50 labeled, avg 26380.3ms/frame (0.04 fps), total 1319.0s
+m3_tree/yellow/vidd_1: Done: 45/50 labeled, avg 27820.5ms/frame (0.04 fps), total 1391.0s
+m2_gmm/yellow/vidd_1: Done: 44/50 labeled, avg 29544.4ms/frame (0.03 fps), total 1477.2s
+m4_logreg/yellow/vidd_1: Done: 29/50 labeled, avg 22756.8ms/frame (0.04 fps), total 1137.8s
+m0_baseline/yellow/vidd_1: Done: 45/50 labeled, avg 30257.4ms/frame (0.03 fps), total 1512.9s
+m0_baseline/both/vidd_3: Done: 16/50 labeled, avg 1173.8ms/frame (0.85 fps), total 58.7s
+m5_mlp/yellow/vidd_3: Done: 18/50 labeled, avg 5271.7ms/frame (0.19 fps), total 263.6s
+m3_tree/yellow/vidd_3: Done: 35/50 labeled, avg 33010.6ms/frame (0.03 fps), total 1650.5s
+m5_mlp/yellow/vidd_2: Done: 39/50 labeled, avg 9160.7ms/frame (0.11 fps), total 458.0s
+m0_baseline/both/vidd_2: Done: 39/50 labeled, avg 6382.4ms/frame (0.16 fps), total 319.1s
+m3_tree/yellow/vidd_2: Done: 48/50 labeled, avg 37295.0ms/frame (0.03 fps), total 1864.8s
+m4_logreg/yellow/vidd_3: Done: 35/50 labeled, avg 32129.4ms/frame (0.03 fps), total 1606.5s
+m5_mlp/yellow/vidd_1: Done: 44/50 labeled, avg 24164.1ms/frame (0.04 fps), total 1208.2s
+m2_gmm/both/vidd_2: Done: 34/50 labeled, avg 15517.3ms/frame (0.06 fps), total 775.9s
+m0_baseline/both/vidd_1: Done: 45/50 labeled, avg 24338.9ms/frame (0.04 fps), total 1216.9s
+m2_gmm/both/vidd_3: Done: 19/50 labeled, avg 23633.5ms/frame (0.04 fps), total 1181.7s
+m4_logreg/both/vidd_2: Done: 41/50 labeled, avg 9446.4ms/frame (0.11 fps), total 472.3s
+m1_otsu/both/vidd_1: Done: 43/50 labeled, avg 31775.6ms/frame (0.03 fps), total 1588.8s
+m3_tree/both/vidd_1: Done: 47/50 labeled, avg 24539.6ms/frame (0.04 fps), total 1227.0s
+m2_gmm/both/vidd_1: Done: 47/50 labeled, avg 29234.6ms/frame (0.03 fps), total 1461.7s
+m5_mlp/both/vidd_3: Done: 18/50 labeled, avg 6190.2ms/frame (0.16 fps), total 309.5s
+m5_mlp/both/vidd_2: Done: 39/50 labeled, avg 10724.4ms/frame (0.09 fps), total 536.2s
+m3_tree/both/vidd_3: Done: 35/50 labeled, avg 29390.5ms/frame (0.03 fps), total 1469.5s
+m3_tree/both/vidd_2: Done: 48/50 labeled, avg 33020.6ms/frame (0.03 fps), total 1651.0s
+m4_logreg/both/vidd_1: Done: 47/50 labeled, avg 27226.8ms/frame (0.04 fps), total 1361.3s
+m1_otsu/both/vidd_3: Done: 16/50 labeled, avg 50832.4ms/frame (0.02 fps), total 2541.6s
+m5_mlp/both/vidd_1: Done: 47/50 labeled, avg 20584.3ms/frame (0.05 fps), total 1029.2s
+m4_logreg/both/vidd_3: Done: 35/50 labeled, avg 24779.3ms/frame (0.04 fps), total 1239.0s
+m1_otsu/both/vidd_2: Done: 30/50 labeled, avg 62132.1ms/frame (0.02 fps), total 3106.6s

@@ -1,0 +1,21 @@
+m2_kmeans/vidd_3: proposing ROIs for 50 frame(s)
+  m2_kmeans/vidd_3: replaced 22 unusable cached ROI(s) with the fallback
+Running ALINA: 2 runs on 6 processes
+m2_kmeans/vidd_3/first-frame: Done: 0/50 labeled, avg 50.9ms/frame (19.65 fps), total 2.5s
+m2_kmeans/vidd_3/every-frame: Done: 13/50 labeled, avg 741.0ms/frame (1.35 fps), total 37.0s
+m5_ridge/vidd_1: proposing ROIs for 50 frame(s)
+  m5_ridge/vidd_1: replaced 35 unusable cached ROI(s) with the fallback
+Running ALINA: 2 runs on 6 processes
+m5_ridge/vidd_1/every-frame: Done: 32/50 labeled, avg 6431.5ms/frame (0.16 fps), total 321.6s
+m5_ridge/vidd_1/first-frame: Done: 43/50 labeled, avg 8099.5ms/frame (0.12 fps), total 405.0s
+m1_hough/vidd_3: proposing ROIs for 50 frame(s)
+  m1_hough/vidd_3: replaced 1 unusable cached ROI(s) with the fallback
+m4_vlm_points/vidd_3: proposing ROIs for 50 frame(s)
+  m4_vlm_points/vidd_3: replaced 3 unusable cached ROI(s) with the fallback
+Running ALINA: 2 runs on 6 processes
+m1_hough/vidd_3/every-frame: Done: 22/50 labeled, avg 1138.4ms/frame (0.88 fps), total 56.9s
+m4_vlm_points/vidd_3/every-frame: Done: 9/50 labeled, avg 1957.2ms/frame (0.51 fps), total 97.9s
+m2_kmeans/vidd_2: proposing ROIs for 50 frame(s)
+  m2_kmeans/vidd_2: replaced 3 unusable cached ROI(s) with the fallback
+Running ALINA: 1 runs on 6 processes
+m2_kmeans/vidd_2/every-frame: Done: 40/50 labeled, avg 2248.9ms/frame (0.44 fps), total 112.4s

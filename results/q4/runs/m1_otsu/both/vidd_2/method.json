@@ -1,0 +1,24 @@
+{
+ "method": "m1_otsu",
+ "video": "vidd_2",
+ "seed": 42,
+ "fit_s": 0.0,
+ "t_S": {
+  "median": 66.0,
+  "min": 60.0,
+  "max": 69.0,
+  "frames": 39
+ },
+ "t_V": {
+  "median": 86.0,
+  "min": 77.0,
+  "max": 156.0,
+  "frames": 35
+ },
+ "t_W": {
+  "median": 84.5,
+  "min": 80.0,
+  "max": 106.0,
+  "frames": 26
+ }
+}

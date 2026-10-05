@@ -1,0 +1,42 @@
+{
+  "frame_size": [
+    1920,
+    1080
+  ],
+  "corners_px": {
+    "bottom_left": [
+      583,
+      795
+    ],
+    "top_left": [
+      957,
+      730
+    ],
+    "top_right": [
+      1159,
+      730
+    ],
+    "bottom_right": [
+      1159,
+      795
+    ]
+  },
+  "corners_fraction": {
+    "bottom_left": [
+      0.304,
+      0.736
+    ],
+    "top_left": [
+      0.498,
+      0.676
+    ],
+    "top_right": [
+      0.604,
+      0.676
+    ],
+    "bottom_right": [
+      0.604,
+      0.736
+    ]
+  }
+}
