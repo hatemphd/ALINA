@@ -2,7 +2,7 @@
 
 [Back to README](../README.md#report) | [Q3 details](Q3_AUTO_ROI.md) | [Q4 details](Q4_COLOR_THRESHOLD.md)
 
-This page explains every technique used in Q3 and Q4 without the math. The technical details and the numbers are in the Q3 and Q4 write-ups.
+This page explains every technique used in Q3 and Q4 without the math. The technical details and the numbers are in the Q3 and Q4 write-ups. For a longer study guide, covering how each algorithm works, how ALINA's F1 differs from a textbook F1, and ideas for further experiments, see [ML_review_ideation.md](ML_review_ideation.md).
 
 ---
 

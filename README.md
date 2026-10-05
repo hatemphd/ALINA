@@ -512,6 +512,8 @@ End-to-end demo of the best pipeline (Hough ROI on every frame + ALINA's yellow 
 
 ### Saving the experiment data
 
+**Full experiment data (Google Drive):** [ALINA results archive](https://drive.google.com/file/d/11wKV1DYAJMh3jUcTpf9Wxy_7zr9-00rW/view?usp=drive_link). Download it and restore it with `cd ~/ALINA && unzip -o ~/Downloads/ALINA_results_*.zip`.
+
 The runs produce about 350 MB, mostly annotated frames. Keep a full copy on Google Drive as one zip; GitHub gets the summaries, logs, ROI evidence, plots, coords and cached GPT replies, about 83 MB. `.gitignore` already keeps the bulky folders (`results/q2|q3/**/annotated/`, `results/q4/train_cache/`), zips and `.env` out of git.
 
 ```bash
@@ -551,6 +553,7 @@ Details, the restore command, and pre-commit checks: [assignment/saving_experime
 | [REPORT.md](assignment/REPORT.md) | Final report: pipeline, experiments, results and discussion, limitations, conclusion |
 | [DEMO_VIDEO.md](assignment/DEMO_VIDEO.md) | Demo video: what it shows, timeline, narration script, recording and upload steps |
 | [building_video.md](assignment/building_video.md) | Turning a folder of labeled frames into an MP4 with ffmpeg, Python or iMovie |
+| [ML_review_ideation.md](assignment/ML_review_ideation.md) | Study guide to every ML technique (plain English, then details), how ALINA's F1 differs from textbook F1, and further ideas with a fast follow-up experiment |
 | [github_vs_googledrive.md](assignment/github_vs_googledrive.md) | What is on GitHub and what stays local / on Google Drive (git-ignored files) |
 | [Q3_AUTO_ROI.md](assignment/Q3_AUTO_ROI.md) | Integration point, Q3a methods and results, Q3b per-frame comparison |
 | [data_used_in_q3.md](assignment/data_used_in_q3.md) | Which original ALINA data and Q2 outputs Q3 uses, and how |

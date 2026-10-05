@@ -4,6 +4,8 @@
 
 The Q2–Q4 runs took about 13.6 hours of pipeline time (see [why the headless runner was needed](Q2_MANUAL_ROI.md#how-the-runs-were-executed)) and produced about 350 MB of outputs. This page explains how to keep a full copy on Google Drive, and which parts go to GitHub.
 
+**Shared archive:** [ALINA results on Google Drive](https://drive.google.com/file/d/11wKV1DYAJMh3jUcTpf9Wxy_7zr9-00rW/view?usp=drive_link). It holds the full `results/` and `outputs/` folders, including the annotated frames that are not on GitHub. To restore it, see [Restoring from the zip](#restoring-from-the-zip).
+
 **The rule:** everything goes to Google Drive as one zip. GitHub gets the evidence and results that the write-ups use, but not the bulky, regenerable images and caches.
 
 ---

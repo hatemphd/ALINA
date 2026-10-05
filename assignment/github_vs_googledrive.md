@@ -4,6 +4,8 @@
 
 The repository on GitHub holds the full assignment: code, docs, the dataset, experiment results, figures, scores, cached GPT replies and the demo video. A few things are deliberately kept out by `.gitignore`. They stay on the local machine and in the Google Drive zip (see [saving_experiments_data.md](saving_experiments_data.md)).
 
+**Download the Google Drive archive:** [ALINA results on Google Drive](https://drive.google.com/file/d/11wKV1DYAJMh3jUcTpf9Wxy_7zr9-00rW/view?usp=drive_link)
+
 ---
 
 ## 1. Bulky experiment outputs you can regenerate (Google Drive only)
