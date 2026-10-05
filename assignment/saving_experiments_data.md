@@ -1,6 +1,6 @@
 # Saving the experiment data
 
-[Back to README](../README.md#saving-the-experiment-data) | [Q2](Q2_MANUAL_ROI.md) | [Q3](Q3_AUTO_ROI.md) | [Q4](Q4_COLOR_THRESHOLD.md)
+[Back to README](../README.md#saving-the-experiment-data) | [Q2](Q2_MANUAL_ROI.md) | [Q3](Q3_AUTO_ROI.md) | [Q4](Q4_COLOR_THRESHOLD.md) | [GitHub vs. Google Drive](github_vs_googledrive.md)
 
 The Q2–Q4 runs took about 13.6 hours of pipeline time (see [why the headless runner was needed](Q2_MANUAL_ROI.md#how-the-runs-were-executed)) and produced about 350 MB of outputs. This page explains how to keep a full copy on Google Drive, and which parts go to GitHub.
 

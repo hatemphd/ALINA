@@ -551,6 +551,7 @@ Details, the restore command, and pre-commit checks: [assignment/saving_experime
 | [REPORT.md](assignment/REPORT.md) | Final report: pipeline, experiments, results and discussion, limitations, conclusion |
 | [DEMO_VIDEO.md](assignment/DEMO_VIDEO.md) | Demo video: what it shows, timeline, narration script, recording and upload steps |
 | [building_video.md](assignment/building_video.md) | Turning a folder of labeled frames into an MP4 with ffmpeg, Python or iMovie |
+| [github_vs_googledrive.md](assignment/github_vs_googledrive.md) | What is on GitHub and what stays local / on Google Drive (git-ignored files) |
 | [Q3_AUTO_ROI.md](assignment/Q3_AUTO_ROI.md) | Integration point, Q3a methods and results, Q3b per-frame comparison |
 | [data_used_in_q3.md](assignment/data_used_in_q3.md) | Which original ALINA data and Q2 outputs Q3 uses, and how |
 | [Q4_COLOR_THRESHOLD.md](assignment/Q4_COLOR_THRESHOLD.md) | Baseline, training data, methods, results for yellow and white lines |
