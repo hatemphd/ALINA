@@ -483,6 +483,7 @@ Details: [assignment/EVALUATION.md](assignment/EVALUATION.md) (frames used, all 
    - **Q3a:** 5 ROI methods × 3 videos.
    - **Q3b:** the same 5 methods with a new ROI on every frame.
    - **Q4:** 6 color methods (baseline + 5) × 3 videos × 2 modes (yellow only, yellow + white), with leave-one-video-out training.
+   - **Follow-ups:** five more color classifiers scored on mask quality (`experiments/q4_fast_ideas.py`), and the paper's validation data re-scored with stricter metrics (`experiments/metric_comparison.py`).
 
    Every run covers all 50 frames per video; the scoring is in `results/q3/summary.csv` and `results/q4/summary.csv`.
 
@@ -490,6 +491,7 @@ Details: [assignment/EVALUATION.md](assignment/EVALUATION.md) (frames used, all 
    - **The ROI matters most.** Automating it with a line-centred trapezoid took `vidd_1` from 23.8 to 70.0 CBEM F1 and `vidd_3` from 0 to 16–22 frames. Classical Hough did best overall. GPT-5.5 did well only when asked to point at the line, not to draw the box.
    - **Per-frame ROI** helps curves and bad first ROIs, and does nothing for a good ROI on a straight taxiway.
    - **Learned color thresholds** give better masks and add white detection, which the baseline lacks (white F1 0.98 vs. 0). They raise `vidd_3` coverage to 35 frames, but don't beat the hand-set yellow range end-to-end on the two videos with ground truth. Because ALINA keeps everything connected to the line, one wrong blob, such as the aircraft nose, costs more than many scattered errors.
+   - **Follow-ups:** random forest, gradient boosting, naive Bayes, mask clean-up and CLAHE did not beat the MLP (best: random forest, white F1 0.984). ALINA's x/y-set F1 is lenient: 95.2 on the paper's validation data vs. 87.4 with a 3-pixel tolerance.
 
 4. **Limitations.**
    - **Little ground truth:** only 17 CBEM frames (7 in `vidd_1` and 10 in `vidd_2`; none in `vidd_3`), and `vidd_1`'s 7 contain just 2 distinct tracings.

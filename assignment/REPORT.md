@@ -19,6 +19,7 @@ ALINA labels taxiway centerlines in aircraft camera footage with a classical com
 **Results:**
 - **Automating the ROI gave the largest gains:** `vidd_1` CBEM F1 went from 23.8 to 70.0, and the curved `vidd_3` went from 0 to 16–22 labeled frames. A cheap Hough-line method did best overall.
 - **Learned color thresholds made better masks and added white-line detection** (white F1 0.98 vs. 0). They did not beat the hand-set yellow rule end to end on the videos where it already worked.
+- **Follow-ups:** five more color classifiers did not beat the MLP, and ALINA's own F1 (95.2 on the paper's validation data) proved more lenient than a 3-pixel-tolerance F1 (87.4).
 - **Takeaway:** the ROI matters most, and simple ideas used well beat heavy models. The conclusions are limited by a small ground truth: 17 frames, none for `vidd_3`.
 
 ---
@@ -139,8 +140,10 @@ The OpenAI key for new GPT calls goes in `.env` (git-ignored; template `.env.exa
 | **Q3b** every-frame ROI | 15 | Same 5 methods, new ROI on every frame; jitter and stability measured |
 | **Q4** color step | 36 | 6 methods (baseline + 5) × 3 videos × 2 modes (yellow only, yellow + white) |
 | Model selection for the GPT methods | – | `gpt-4.1`, `gpt-5.4-mini`, `gpt-5.5`, with and without a labelled pixel grid, on the three first frames |
+| **Q4 follow-up:** five more color ideas | 7 configurations | Random forest, gradient boosting, Gaussian naive Bayes, MLP + morphological opening, CLAHE + hand-set rule, plus the baseline and MLP re-run as a consistency check. Mask quality only (no end-to-end labeling), same fixed ROI, scored frames, training cache and seed as Q4; about 3.5 min on the CPU (`experiments/q4_fast_ideas.py`) |
+| **Metric comparison** | 120 frame pairs | The paper's validation pairs (`data/gt_alina_labels/`) re-scored with ALINA's x/y-set F1, exact-pixel F1 and 3-pixel-tolerance F1 (`experiments/metric_comparison.py`) |
 
-- **Frames:** every run covers all 50 frames per video.
+- **Frames:** every pipeline run covers all 50 frames per video.
 - **GPT credits:** they ran out during the first Q3b pass, and 146 of 300 GPT calls failed. Failed calls are not cached, so after credits were added a second pass filled in exactly those frames. All 300 calls now have a real reply, and every GPT row is scored on all 50 frames.
 
 ---
@@ -271,6 +274,42 @@ All rows: [Q3_AUTO_ROI.md](Q3_AUTO_ROI.md#q3b-automated-roi-on-every-frame-5-poi
 
 ![F1 bars](../results/summary/f1_bars.png)
 
+### 4.7 Follow-up: five more color methods
+
+Mask quality on the same frames and metrics as the Q4 table (`results/q4_ideas/pixels.csv`). The re-run baseline and MLP match `results/q4/pixels.csv` exactly, so the rows are directly comparable.
+
+| Method | Yellow F1 | White F1 | White false positives (% of ROI) | Color step (ms/frame) | Training (s, 2 folds) |
+|---|---|---|---|---|---|
+| Baseline HSV (re-run) | 0.884 | 0 | 0 | 13 | 0 |
+| M5 MLP (re-run, best in Q4) | 0.907 | 0.983 | 0.01 | 1,009 | 41 |
+| Random forest (100 trees, depth 12, context features) | 0.902 | **0.984** | **0.00** | 1,525 | 13 |
+| Gradient boosting (untuned, context features) | 0.546 | 0.868 | 3.65 | 2,005 | 4 |
+| Gaussian naive Bayes (HSV + Lab) | 0.876 | 0.982 | **0.00** | 227 | 0.1 |
+| MLP + 3×3 morphological opening | **0.908** | 0.983 | 0.01 | 921 | 43 |
+| CLAHE contrast equalization + hand-set rule | 0.886 | 0 | 0 | 25 | 0 |
+
+- **None clearly beats the MLP.** The random forest ties it on white and the tree on yellow; opening the MLP masks gains only 0.001.
+- **Naive Bayes is a cheap white detector:** white F1 0.982 with no false white, trained in 0.1 s, 4× faster per frame than the MLP, but slightly below the hand-set rule on yellow.
+- **Untuned gradient boosting failed on yellow** (0.546): without class weights it fit the training videos' lighting and did not transfer under leave-one-video-out.
+- **CLAHE barely helps** (+0.002): normalizing contrast does not give the hand-set rule a notion of white or of shape.
+- **What this means:** the remaining limits are the labels (one white stripe, weak yellow labels) and the ROI, not the choice of classifier. End-to-end ALINA scores of these methods were not measured.
+
+### 4.8 How lenient is ALINA's metric?
+
+ALINA's F1 compares the *set of x values* and the *set of y values* of the prediction and the ground truth separately, then averages them. A predicted x counts if any ground-truth pixel has that x, at any height; duplicates collapse; frames without an output file are skipped. Re-scoring the paper's 120 validation pairs shows how much this matters:
+
+| Video | Frames | ALINA F1 (x/y sets) | Exact-pixel F1 | F1 within 3 px |
+|---|---|---|---|---|
+| `vidd_1` | 40 | 98.0 | 21.0 | 76.6 |
+| `vidd_2` | 40 | 92.8 | 27.7 | 90.0 |
+| `vidd_3` | 40 | 94.7 | 37.7 | 95.8 |
+| **All** | 120 | **95.2** | **28.8** | **87.4** |
+
+- The ALINA column reproduces `alina evaluate` exactly (F1 95.17%).
+- **Exact-pixel matching is too strict** for thin lines: CBEM marks the paint's edges and ALINA its traversal path, so they rarely share a pixel even when both are right.
+- **A 3-pixel tolerance is the fairest comparison** and is about 8 points below ALINA's figure overall (21 points on `vidd_1`; equal on `vidd_3`). ALINA's metric measures coverage of the right rows and columns rather than exact placement.
+- **How this project reported results:** ALINA's metric was kept for comparability with the paper, but frames with no output score 0 instead of being skipped, frames labeled are reported separately, and Q4 adds pixel-level IoU/F1.
+
 ---
 
 ## 5. Limitations
@@ -281,8 +320,9 @@ All rows: [Q3_AUTO_ROI.md](Q3_AUTO_ROI.md#q3b-automated-roi-on-every-frame-5-poi
 - **Weak training labels.** The published labels used for training (Q3 M5, Q4 M3–M5) and for the agreement metric are the authors' ALINA output, not independent truth.
 - **Thin white evidence.** White paint appears inside an ROI only in `vidd_1`, so the white labels come from one hand-traced stripe (3 training, 5 test frames). The white results show feasibility, not a general white detector.
 - **No repeated runs.** Each method was run once. (The GPT every-frame results were completed in a second pass after the credits ran out mid-run; see section 3.) All methods except GPT are deterministic, but run-to-run variance (mean ± std) was not measured for GPT.
-- **No CNN or segmentation foundation model.** PyTorch is not available on this Intel Mac, so the neural network is a small MLP with hand-built neighborhood features. A segmentation foundation model was not tried (no GPU, no credits).
-- **Lenient metric.** ALINA's metric matches x and y values separately. The Q4 pixel-level metrics are stricter but only cover yellow and white masks, not the final labels.
+- **No CNN or segmentation foundation model.** PyTorch is not available on this Intel Mac, so the neural network is a small MLP with hand-built neighborhood features. A segmentation foundation model was not tried (no GPU).
+- **Lenient metric.** ALINA's metric matches x and y values separately. On the paper's validation data it gives 95.2 F1 where a 3-pixel-tolerance F1 gives 87.4 (section 4.8), so absolute CBEM F1 values overstate placement accuracy; comparisons between methods are still like for like. The Q4 pixel-level metrics are stricter but only cover yellow and white masks, not the final labels.
+- **Follow-up methods are mask-only.** The five extra color methods (section 4.7) were scored on mask quality only, untuned, with one seed; their end-to-end effect on ALINA's labels was not measured.
 - **Timing is noisy and dominated by CIRCLEDAT.** Runs were parallel on 12 CPUs, which inflates per-run times (equally across methods).
 - **Fixed design choices.** The trapezoid constants (line fraction 0.55, depth 6%) and the Q4 fixed ROI were chosen from Q2/Q3 evidence, not tuned by search. Other ROIs could change the Q4 ranking.
 
@@ -315,8 +355,10 @@ All rows: [Q3_AUTO_ROI.md](Q3_AUTO_ROI.md#q3b-automated-roi-on-every-frame-5-poi
 | Per-question records | [Q1](Q1_SETUP.md), [Q2](Q2_MANUAL_ROI.md), [Q3](Q3_AUTO_ROI.md), [Q4](Q4_COLOR_THRESHOLD.md) |
 | Short conclusions | [Q2Summary.md](Q2Summary.md), [Q3_Q4_Summary.md](Q3_Q4_Summary.md) |
 | Evaluation protocol, frames used, seeds | [EVALUATION.md](EVALUATION.md), [data_used_in_q3.md](data_used_in_q3.md) |
-| Methods in plain English | [ML_METHODS_EXPLAINED.md](ML_METHODS_EXPLAINED.md) |
-| Result tables | `results/q3/summary.csv`, `results/q4/summary.csv`, `results/q4/pixels.csv` |
+| Methods in plain English | [ML_METHODS_EXPLAINED.md](ML_METHODS_EXPLAINED.md); study guide with the metric analysis and further ideas: [ML_review_ideation.md](ML_review_ideation.md) |
+| Result tables | `results/q3/summary.csv`, `results/q4/summary.csv`, `results/q4/pixels.csv`, `results/q4_ideas/pixels.csv` (follow-up) |
+| Follow-up scripts | `experiments/q4_fast_ideas.py` (section 4.7), `experiments/metric_comparison.py` (section 4.8) |
+| Slide decks | [Q3_Q4_Techniques_and_Results.pptx](../Q3_Q4_Techniques_and_Results.pptx), [ALINA_Explained.pptx](../ALINA_Explained.pptx) |
 | Plots | `results/summary/`, `results/q3/overlays/`, `results/q4/figures/` |
 | Saving the run data | [saving_experiments_data.md](saving_experiments_data.md) |
 | Demo video of the end-to-end pipeline | Rendered clip [`results/demo/alina_best_method.mp4`](../results/demo/alina_best_method.mp4) (`experiments/make_demo_video.py`); narration script in [DEMO_VIDEO.md](DEMO_VIDEO.md); narrated link to be added |
