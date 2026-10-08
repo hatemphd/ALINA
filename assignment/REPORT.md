@@ -361,4 +361,5 @@ ALINA's F1 compares the *set of x values* and the *set of y values* of the predi
 | Slide decks | [Q3_Q4_Techniques_and_Results.pptx](../Q3_Q4_Techniques_and_Results.pptx), [ALINA_Explained.pptx](../ALINA_Explained.pptx) |
 | Plots | `results/summary/`, `results/q3/overlays/`, `results/q4/figures/` |
 | Saving the run data | [saving_experiments_data.md](saving_experiments_data.md) |
+| Full experiment data, including the annotated frames not on GitHub | [Google Drive archive](https://drive.google.com/file/d/1iIszTUjEguX2ebVMos0Et96VCIEvwA0y/view?usp=sharing) (updated 2026-10-07) |
 | Demo video of the end-to-end pipeline | Rendered clip [`results/demo/alina_best_method.mp4`](../results/demo/alina_best_method.mp4) (`experiments/make_demo_video.py`); narration script in [DEMO_VIDEO.md](DEMO_VIDEO.md); narrated link to be added |

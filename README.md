@@ -514,9 +514,9 @@ End-to-end demo of the best pipeline (Hough ROI on every frame + ALINA's yellow 
 
 ### Saving the experiment data
 
-**Full experiment data (Google Drive):** [ALINA results archive](https://drive.google.com/file/d/11wKV1DYAJMh3jUcTpf9Wxy_7zr9-00rW/view?usp=drive_link). Download it and restore it with `cd ~/ALINA && unzip -o ~/Downloads/ALINA_results_*.zip`.
+**Full experiment data (Google Drive):** [ALINA results archive](https://drive.google.com/file/d/1iIszTUjEguX2ebVMos0Et96VCIEvwA0y/view?usp=sharing). Download it and restore it with `cd ~/ALINA && unzip -o ~/Downloads/ALINA_results_*.zip`.
 
-The runs produce about 350 MB, mostly annotated frames. Keep a full copy on Google Drive as one zip; GitHub gets the summaries, logs, ROI evidence, plots, coords and cached GPT replies, about 83 MB. `.gitignore` already keeps the bulky folders (`results/q2|q3/**/annotated/`, `results/q4/train_cache/`), zips and `.env` out of git.
+The archive was last updated on 2026-10-07, after the GPT re-run. The runs produce about 380 MB, mostly annotated frames. Keep a full copy on Google Drive as one zip; GitHub gets the summaries, logs, ROI evidence, plots, coords and cached GPT replies, about 83 MB. `.gitignore` already keeps the bulky folders (`results/q2|q3/**/annotated/`, `results/q4/train_cache/`), zips and `.env` out of git.
 
 ```bash
 cd ~/ALINA && zip -r -q ~/Desktop/ALINA_results_$(date +%Y-%m-%d).zip results outputs -x "*.DS_Store"

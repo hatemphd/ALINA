@@ -2,9 +2,11 @@
 
 [Back to README](../README.md#saving-the-experiment-data) | [Q2](Q2_MANUAL_ROI.md) | [Q3](Q3_AUTO_ROI.md) | [Q4](Q4_COLOR_THRESHOLD.md) | [GitHub vs. Google Drive](github_vs_googledrive.md)
 
-The Q2–Q4 runs took about 13.6 hours of pipeline time (see [why the headless runner was needed](Q2_MANUAL_ROI.md#how-the-runs-were-executed)) and produced about 350 MB of outputs. This page explains how to keep a full copy on Google Drive, and which parts go to GitHub.
+The Q2–Q4 runs took about 13.6 hours of pipeline time (see [why the headless runner was needed](Q2_MANUAL_ROI.md#how-the-runs-were-executed)) and produced about 380 MB of outputs. This page explains how to keep a full copy on Google Drive, and which parts go to GitHub.
 
-**Shared archive:** [ALINA results on Google Drive](https://drive.google.com/file/d/11wKV1DYAJMh3jUcTpf9Wxy_7zr9-00rW/view?usp=drive_link). It holds the full `results/` and `outputs/` folders, including the annotated frames that are not on GitHub. To restore it, see [Restoring from the zip](#restoring-from-the-zip).
+**Shared archive:** [ALINA results on Google Drive](https://drive.google.com/file/d/1iIszTUjEguX2ebVMos0Et96VCIEvwA0y/view?usp=sharing). It holds the full `results/` and `outputs/` folders, including the annotated frames that are not on GitHub. To restore it, see [Restoring from the zip](#restoring-from-the-zip).
+
+**Archive version:** updated on 2026-10-07, after the GPT-5.5 every-frame calls that had failed for lack of credits were completed. It includes the completed Q3 GPT runs, the Q4 follow-up results (`results/q4_ideas/`), the re-run log (`results/q3/logs/`) and the demo video (`results/demo/`). An earlier archive (2026-10-05) had the partial GPT results; its link is no longer used.
 
 **The rule:** everything goes to Google Drive as one zip. GitHub gets the evidence and results that the write-ups use, but not the bulky, regenerable images and caches.
 
@@ -15,9 +17,11 @@ The Q2–Q4 runs took about 13.6 hours of pipeline time (see [why the headless r
 | Folder | Size | Contents |
 |---|---|---|
 | `results/q2/` | 207 MB | 11 manual-ROI runs: annotated frames, coords, `timing.log`, ROI evidence |
-| `results/q3/` | 89 MB | 30 auto-ROI runs, cached GPT replies, `summary.csv`, overlays |
+| `results/q3/` | 90 MB | 30 auto-ROI runs (GPT every-frame runs complete), cached GPT replies, `summary.csv`, overlays, re-run log |
 | `results/q4/` | 47 MB | 36 color-threshold runs, mask panels, `summary.csv`, `pixels.csv`, figures, training cache |
+| `results/q4_ideas/` | < 0.1 MB | Follow-up: mask quality of five more color methods (`pixels.csv`) |
 | `results/summary/` | 0.1 MB | Cross-question plots |
+| `results/demo/` | 21 MB | Demo video (MP4) and preview GIF |
 | `outputs/` | 15 MB | `vidd_1` frames resized to 1080p (Q2 Step 1) |
 
 ## 2. Save everything to Google Drive
@@ -28,7 +32,7 @@ Run this in Terminal. It creates one dated zip on your Desktop:
 cd ~/ALINA && zip -r -q ~/Desktop/ALINA_results_$(date +%Y-%m-%d).zip results outputs -x "*.DS_Store" && ls -lh ~/Desktop/ALINA_results_*.zip
 ```
 
-- **Size:** expect roughly 330–350 MB. Most of it is JPEG images, which don't compress further.
+- **Size:** expect roughly 370–380 MB. Most of it is JPEG images, which don't compress further.
 - **No secrets:** the key file `.env` is in neither folder, so it is never in the zip.
 - **Check the archive:**
 
@@ -58,8 +62,8 @@ These rules are in [`.gitignore`](../.gitignore), so `git add` skips them automa
 
 | Ignored | Size | Why |
 |---|---|---|
-| `results/q2/**/annotated/*` | 195 MB | Every frame with red line pixels drawn on: bulky and regenerable |
-| `results/q3/**/annotated/*` | 64 MB | Same, for Q3 |
+| `results/q2/**/annotated/*` | 190 MB | Every frame with red line pixels drawn on: bulky and regenerable |
+| `results/q3/**/annotated/*` | 63 MB | Same, for Q3 (includes the completed GPT every-frame runs) |
 | `results/q4/train_cache/` | 10 MB | Binary training-sample cache, rebuilt automatically on the next Q4 run |
 | `outputs/` | 15 MB | Resized `vidd_1` frames, regenerable with Q2 Step 1 |
 | `*.zip` | – | Archives belong on Drive |

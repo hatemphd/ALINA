@@ -29,7 +29,7 @@ LIGHT = RGBColor(0xF3, 0xF4, 0xF6)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 GREEN = RGBColor(0xD9, 0xF2, 0xE0)
 W, H = Inches(13.333), Inches(7.5)
-DRIVE = "https://drive.google.com/file/d/11wKV1DYAJMh3jUcTpf9Wxy_7zr9-00rW/view?usp=drive_link"
+DRIVE = "https://drive.google.com/file/d/1iIszTUjEguX2ebVMos0Et96VCIEvwA0y/view?usp=sharing"
 REPO = "https://github.com/hatemphd/ALINA"
 
 
