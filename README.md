@@ -375,12 +375,12 @@ Runtime on this Mac: about 16 minutes for the first-frame runs and about an hour
 | Video | Manual ROI (Q2) | Best automated, first frame (Q3a) | Same method, every frame (Q3b) |
 |---|---|---|---|
 | `vidd_1` | CBEM F1 23.8 | M1 Hough: **70.0** | 71.5 |
-| `vidd_2` | CBEM F1 91.6 | M4 GPT-5.5 centerline points: **91.3** | 90.8 (partial: 19 frames) |
+| `vidd_2` | CBEM F1 91.6 | M4 GPT-5.5 centerline points: **91.3** | 91.0 |
 | `vidd_3` | 0/50 labeled | M1 Hough: **16/50** | 22/50 |
 
 - **Q3a:** the gain comes from the shared trapezoid. It makes the centerline vertical in the bird's-eye view, the main lesson from Q2. Asking GPT-5.5 to point at the line works much better than asking it to draw the box (CBEM F1 64.2 vs 13.2 on `vidd_1`).
-- **Q3b:** a new ROI on every frame helps when the first ROI was wrong or the taxiway curves (`vidd_3`: 0–16 → 9–22 frames labeled). It doesn't help a good ROI on a straight taxiway (`vidd_2`: within about 1 point). It costs one ROI proposal per frame, which for GPT is a paid call taking 15–36 s.
-- **Caveat:** the OpenAI credits ran out during Q3b, so the GPT every-frame results cover only the frames with a real reply.
+- **Q3b:** a new ROI on every frame helps when the first ROI was wrong or the taxiway curves (`vidd_3`: 0–16 → 13–26 frames labeled). It doesn't help a good ROI on a straight taxiway (`vidd_2`: within about 1 point). It costs one ROI proposal per frame, which for GPT is a paid call taking 15–36 s.
+- **GPT re-run:** the OpenAI credits ran out during the first Q3b pass (146 of 300 calls failed). After adding credits, re-running the same command filled in only those frames, so the GPT every-frame results now cover all 50 frames per video.
 
 Details: [assignment/Q3_AUTO_ROI.md](assignment/Q3_AUTO_ROI.md) | Data sources: [assignment/data_used_in_q3.md](assignment/data_used_in_q3.md)
 
@@ -461,7 +461,7 @@ uv run python -m experiments.summary_plots
 | Q3b every-frame ROI | M1 Hough | **71.5** | 82.8 | **22** |
 | Q4 color step | MLP (best masks), tree (explicit thresholds); baseline still best end-to-end on yellow | 70.0 (baseline), 67.0 (MLP) | 83.2 (baseline), 81.9 (MLP) | **35** (tree) |
 
-Seed 42 is used everywhere; GPT replies are cached for exact reproduction. Each method was run once per video: everything except the GPT methods is deterministic, and the GPT methods couldn't be re-run after the credits ran out.
+Seed 42 is used everywhere; GPT replies are cached for exact reproduction. Each method was run once per video: everything except the GPT methods is deterministic, and the GPT methods were not repeated to measure run-to-run variation (each repeat costs about 300 paid calls).
 
 Details: [assignment/EVALUATION.md](assignment/EVALUATION.md) (frames used, all metrics, seeds, plots)
 
@@ -495,7 +495,7 @@ Details: [assignment/EVALUATION.md](assignment/EVALUATION.md) (frames used, all 
    - **Little ground truth:** only 17 CBEM frames (7 in `vidd_1` and 10 in `vidd_2`; none in `vidd_3`), and `vidd_1`'s 7 contain just 2 distinct tracings.
    - **Weak training labels:** the published labels used for training are the authors' ALINA output, not independent truth.
    - **Thin white evidence:** white labels come from one hand-traced stripe in one video.
-   - **Partial GPT results:** the OpenAI credits ran out, so the Q3b GPT results cover only some frames, and run-to-run variance (mean ± std) wasn't measured.
+   - **No repeated GPT runs:** each GPT method was run once (the calls that failed when the credits ran out were completed in a second pass), so run-to-run variance (mean ± std) wasn't measured.
    - **No CNN or segmentation foundation model:** PyTorch isn't available on this Intel Mac.
    - **Slow timing:** ALINA's Python CIRCLEDAT dominates time (seconds per frame), so speed comparisons mostly reflect mask size.
 
@@ -553,6 +553,8 @@ Details, the restore command, and pre-commit checks: [assignment/saving_experime
 | [REPORT.md](assignment/REPORT.md) | Final report: pipeline, experiments, results and discussion, limitations, conclusion |
 | [DEMO_VIDEO.md](assignment/DEMO_VIDEO.md) | Demo video: what it shows, timeline, narration script, recording and upload steps |
 | [building_video.md](assignment/building_video.md) | Turning a folder of labeled frames into an MP4 with ffmpeg, Python or iMovie |
+| [Q3_Q4_Techniques_and_Results.pptx](Q3_Q4_Techniques_and_Results.pptx) | Slide deck (31 slides): the Q3 and Q4 ML techniques and their results. Rebuild with `uv run --with python-pptx python scripts/make_slides.py` |
+| [ALINA_Explained.pptx](ALINA_Explained.pptx) | Slide deck (20 slides): what ALINA is, its pipeline, data, evaluation and limitations |
 | [ML_review_ideation.md](assignment/ML_review_ideation.md) | Study guide to every ML technique (plain English, then details), how ALINA's F1 differs from textbook F1, and further ideas with a fast follow-up experiment |
 | [github_vs_googledrive.md](assignment/github_vs_googledrive.md) | What is on GitHub and what stays local / on Google Drive (git-ignored files) |
 | [Q3_AUTO_ROI.md](assignment/Q3_AUTO_ROI.md) | Integration point, Q3a methods and results, Q3b per-frame comparison |

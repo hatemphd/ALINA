@@ -30,282 +30,282 @@
  "18971": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    605,
+    779
    ],
    "top_left": [
-    849,
-    730
+    980,
+    714
    ],
    "top_right": [
-    1051,
-    730
+    1182,
+    714
    ],
    "bottom_right": [
-    1219,
-    795
+    1181,
+    779
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.6001485374771454,
+   "intercept": 2947.489888025592
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.216
+  "nose_y": 796,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 65.25
  },
  "18972": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    665,
+    766
    ],
    "top_left": [
-    849,
-    730
+    1059,
+    701
    ],
    "top_right": [
-    1051,
-    730
+    1260,
+    701
    ],
    "bottom_right": [
-    1219,
-    795
+    1241,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.881453944650963,
+   "intercept": 3189.2862453531543
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.908
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 45.466
  },
  "18973": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    627,
+    785
    ],
    "top_left": [
-    849,
-    730
+    985,
+    720
    ],
    "top_right": [
-    1051,
-    730
+    1187,
+    720
    ],
    "bottom_right": [
-    1219,
-    795
+    1203,
+    785
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.3426019124307986,
+   "intercept": 2783.029189733265
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.673
+  "nose_y": 802,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 20.546
  },
  "18974": {
   "corners": {
    "bottom_left": [
-    643,
-    796
+    1013,
+    859
    ],
    "top_left": [
-    849,
-    731
+    1151,
+    794
    ],
    "top_right": [
-    1051,
-    731
+    1353,
+    794
    ],
    "bottom_right": [
-    1219,
-    796
+    1589,
+    859
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": 1.036303158925803,
+   "intercept": 439.37364296791964
   },
-  "nose_y": 813,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.243
+  "nose_y": 876,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 39.818
  },
  "18975": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    618,
+    772
    ],
    "top_left": [
-    849,
-    730
+    1012,
+    707
    ],
    "top_right": [
-    1051,
-    730
+    1213,
+    707
    ],
    "bottom_right": [
-    1219,
-    795
+    1194,
+    772
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.892723979972299,
+   "intercept": 3167.580856503673
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.375
+  "nose_y": 789,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 51.178
  },
  "18976": {
   "corners": {
    "bottom_left": [
-    643,
-    794
+    596,
+    771
    ],
    "top_left": [
-    849,
-    729
+    938,
+    706
    ],
    "top_right": [
-    1051,
-    729
+    1139,
+    706
    ],
    "bottom_right": [
-    1219,
-    794
+    1172,
+    771
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.092276509494335,
+   "intercept": 2525.5429912523923
   },
-  "nose_y": 811,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.692
+  "nose_y": 788,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 68.328
  },
  "18977": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    635,
+    766
    ],
    "top_left": [
-    849,
-    730
+    1014,
+    701
    ],
    "top_right": [
-    1051,
-    730
+    1215,
+    701
    ],
    "bottom_right": [
-    1219,
-    795
+    1211,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.6516411064927663,
+   "intercept": 2983.3832592804956
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.395
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 57.607
  },
  "18978": {
   "corners": {
    "bottom_left": [
-    643,
-    794
+    620,
+    775
    ],
    "top_left": [
-    849,
-    729
+    971,
+    710
    ],
    "top_right": [
-    1051,
-    729
+    1173,
+    710
    ],
    "bottom_right": [
-    1219,
-    794
+    1196,
+    775
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.237714742309225,
+   "intercept": 2671.079304834196
   },
-  "nose_y": 811,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.276
+  "nose_y": 792,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 80.197
  },
  "18979": {
   "corners": {
    "bottom_left": [
-    643,
-    796
+    632,
+    791
    ],
    "top_left": [
-    849,
-    731
+    1000,
+    726
    ],
    "top_right": [
-    1051,
-    731
+    1202,
+    726
    ],
    "bottom_right": [
-    1219,
-    796
+    1208,
+    791
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.4995893464742407,
+   "intercept": 2925.74040830693
   },
-  "nose_y": 813,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.975
+  "nose_y": 808,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 40.584
  },
  "18980": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    655,
+    767
    ],
    "top_left": [
-    849,
-    730
+    1018,
+    702
    ],
    "top_right": [
-    1051,
-    730
+    1219,
+    702
    ],
    "bottom_right": [
-    1219,
-    795
+    1231,
+    767
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.410301331464626,
+   "intercept": 2820.763665031545
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.846
+  "nose_y": 784,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 15.451
  },
  "18981": {
   "corners": {
@@ -388,64 +388,64 @@
   },
   "nose_y": 813,
   "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.01
+  "note": "unusable ROI (VLM points)",
+  "seconds": 54.701
  },
  "18984": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    642,
+    769
    ],
    "top_left": [
-    849,
-    730
+    1012,
+    704
    ],
    "top_right": [
-    1051,
-    730
+    1213,
+    704
    ],
    "bottom_right": [
-    1219,
-    795
+    1218,
+    769
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.5160277377992903,
+   "intercept": 2893.9967290331
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.057
+  "nose_y": 786,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 44.885
  },
  "18985": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    1037,
+    847
    ],
    "top_left": [
-    849,
-    730
+    1101,
+    782
    ],
    "top_right": [
-    1051,
-    730
+    1303,
+    782
    ],
    "bottom_right": [
-    1219,
-    795
+    1613,
+    847
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": 2.171449823343462,
+   "intercept": -485.8710407239854
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.077
+  "nose_y": 864,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 73.383
  },
  "18986": {
   "corners": {
@@ -500,8 +500,8 @@
   },
   "nose_y": 813,
   "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.875
+  "note": "unusable ROI (VLM points)",
+  "seconds": 74.627
  },
  "18988": {
   "corners": {
@@ -534,58 +534,58 @@
  "18989": {
   "corners": {
    "bottom_left": [
-    643,
-    793
+    598,
+    763
    ],
    "top_left": [
-    849,
-    728
+    902,
+    698
    ],
    "top_right": [
-    1051,
-    728
+    1103,
+    698
    ],
    "bottom_right": [
-    1219,
-    793
+    1174,
+    763
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -1.5045839518030193,
+   "intercept": 2062.797694927092
   },
-  "nose_y": 810,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.009
+  "nose_y": 780,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 62.525
  },
  "18990": {
   "corners": {
    "bottom_left": [
-    643,
-    796
+    616,
+    763
    ],
    "top_left": [
-    849,
-    731
+    1008,
+    698
    ],
    "top_right": [
-    1051,
-    731
+    1210,
+    698
    ],
    "bottom_right": [
-    1219,
-    796
+    1192,
+    763
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.871342992477015,
+   "intercept": 3123.138861799946
   },
-  "nose_y": 813,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.976
+  "nose_y": 780,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 64.316
  },
  "40940": {
   "corners": {
@@ -618,30 +618,30 @@
  "40941": {
   "corners": {
    "bottom_left": [
-    643,
-    762
+    1212,
+    851
    ],
    "top_left": [
-    849,
-    697
+    1578,
+    786
    ],
    "top_right": [
-    1051,
-    697
+    1780,
+    786
    ],
    "bottom_right": [
-    1219,
-    762
+    1788,
+    851
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.456989883452649,
+   "intercept": 3620.1246967993898
   },
-  "nose_y": 779,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.919
+  "nose_y": 868,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 46.753
  },
  "40942": {
   "corners": {
@@ -674,86 +674,86 @@
  "40943": {
   "corners": {
    "bottom_left": [
-    643,
-    762
+    1160,
+    851
    ],
    "top_left": [
-    849,
-    697
+    1501,
+    786
    ],
    "top_right": [
-    1051,
-    697
+    1703,
+    786
    ],
    "bottom_right": [
-    1219,
-    762
+    1736,
+    851
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.0840594706459012,
+   "intercept": 3250.071615292453
   },
-  "nose_y": 779,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.867
+  "nose_y": 868,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 77.565
  },
  "40944": {
   "corners": {
    "bottom_left": [
-    643,
-    762
+    1252,
+    847
    ],
    "top_left": [
-    849,
-    697
+    1618,
+    782
    ],
    "top_right": [
-    1051,
-    697
+    1820,
+    782
    ],
    "bottom_right": [
-    1219,
-    762
+    1828,
+    847
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.4679053092812855,
+   "intercept": 3659.150600352815
   },
-  "nose_y": 779,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.904
+  "nose_y": 864,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 111.924
  },
  "40945": {
   "corners": {
    "bottom_left": [
-    643,
-    761
+    1218,
+    862
    ],
    "top_left": [
-    849,
-    696
+    1566,
+    797
    ],
    "top_right": [
-    1051,
-    696
+    1767,
+    797
    ],
    "bottom_right": [
-    1219,
-    761
+    1794,
+    862
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.179476231141474,
+   "intercept": 3413.822032450897
   },
-  "nose_y": 778,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.894
+  "nose_y": 879,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 44.035
  },
  "40946": {
   "corners": {
@@ -814,142 +814,142 @@
  "40948": {
   "corners": {
    "bottom_left": [
-    643,
-    763
+    1249,
+    851
    ],
    "top_left": [
-    849,
-    698
+    1582,
+    786
    ],
    "top_right": [
-    1051,
-    698
+    1784,
+    786
    ],
    "bottom_right": [
-    1219,
-    763
+    1825,
+    851
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -1.966666666666676,
+   "intercept": 3239.1000000000063
   },
-  "nose_y": 780,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.892
+  "nose_y": 868,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 58.022
  },
  "40949": {
   "corners": {
    "bottom_left": [
-    643,
-    767
+    1223,
+    874
    ],
    "top_left": [
-    849,
-    702
+    1568,
+    809
    ],
    "top_right": [
-    1051,
-    702
+    1770,
+    809
    ],
    "bottom_right": [
-    1219,
-    767
+    1799,
+    874
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.137037037037036,
+   "intercept": 3407.6999999999985
   },
-  "nose_y": 784,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.977
+  "nose_y": 891,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 51.135
  },
  "40950": {
   "corners": {
    "bottom_left": [
-    643,
-    762
+    1235,
+    850
    ],
    "top_left": [
-    849,
-    697
+    1596,
+    785
    ],
    "top_right": [
-    1051,
-    697
+    1798,
+    785
    ],
    "bottom_right": [
-    1219,
-    762
+    1811,
+    850
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.382917758946536,
+   "intercept": 3577.3749923794435
   },
-  "nose_y": 779,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.769
+  "nose_y": 867,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 26.882
  },
  "40951": {
   "corners": {
    "bottom_left": [
-    643,
-    766
+    1235,
+    887
    ],
    "top_left": [
-    849,
-    701
+    1580,
+    822
    ],
    "top_right": [
-    1051,
-    701
+    1781,
+    822
    ],
    "bottom_right": [
-    1219,
-    766
+    1811,
+    887
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.137037037037032,
+   "intercept": 3447.349999999996
   },
-  "nose_y": 783,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.71
+  "nose_y": 904,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 54.34
  },
  "40952": {
   "corners": {
    "bottom_left": [
-    643,
-    768
+    1212,
+    893
    ],
    "top_left": [
-    849,
-    703
+    1551,
+    828
    ],
    "top_right": [
-    1051,
-    703
+    1752,
+    828
    ],
    "bottom_right": [
-    1219,
-    768
+    1788,
+    893
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.0440775185164552,
+   "intercept": 3353.909408587179
   },
-  "nose_y": 785,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.702
+  "nose_y": 910,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 46.865
  },
  "40953": {
   "corners": {
@@ -982,30 +982,30 @@
  "42370": {
   "corners": {
    "bottom_left": [
-    643,
-    805
+    925,
+    847
    ],
    "top_left": [
-    849,
-    740
+    999,
+    782
    ],
    "top_right": [
-    1051,
-    740
+    1201,
+    782
    ],
    "bottom_right": [
-    1219,
-    805
+    1501,
+    847
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": 2.036701777485187,
+   "intercept": -482.90446017116466
   },
-  "nose_y": 822,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.709
+  "nose_y": 864,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 66.739
  },
  "42371": {
   "corners": {
@@ -1038,86 +1038,86 @@
  "42372": {
   "corners": {
    "bottom_left": [
-    643,
-    799
+    638,
+    763
    ],
    "top_left": [
-    849,
-    734
+    825,
+    698
    ],
    "top_right": [
-    1051,
-    734
+    1026,
+    698
    ],
    "bottom_right": [
-    1219,
-    799
+    1214,
+    763
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": 0.2962962962962961,
+   "intercept": 728.8888888888889
   },
-  "nose_y": 816,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.821
+  "nose_y": 780,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 57.572
  },
  "42373": {
   "corners": {
    "bottom_left": [
-    643,
-    799
+    577,
+    772
    ],
    "top_left": [
-    849,
-    734
+    783,
+    707
    ],
    "top_right": [
-    1051,
-    734
+    985,
+    707
    ],
    "bottom_right": [
-    1219,
-    799
+    1153,
+    772
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -4.835602809895179e-16,
+   "intercept": 894.0000000000005
   },
-  "nose_y": 816,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.991
+  "nose_y": 789,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 7.728
  },
  "42374": {
   "corners": {
    "bottom_left": [
-    643,
-    805
+    645,
+    766
    ],
    "top_left": [
-    849,
-    740
+    848,
+    701
    ],
    "top_right": [
-    1051,
-    740
+    1050,
+    701
    ],
    "bottom_right": [
-    1219,
-    805
+    1221,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": 0.04545454545454706,
+   "intercept": 927.40909090909
   },
-  "nose_y": 822,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.927
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 35.583
  },
  "42375": {
   "corners": {
@@ -1178,30 +1178,30 @@
  "42377": {
   "corners": {
    "bottom_left": [
-    643,
-    804
+    577,
+    772
    ],
    "top_left": [
-    849,
-    739
+    787,
+    707
    ],
    "top_right": [
-    1051,
-    739
+    988,
+    707
    ],
    "bottom_right": [
-    1219,
-    804
+    1153,
+    772
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.055555555555556455,
+   "intercept": 936.9333333333341
   },
-  "nose_y": 821,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.791
+  "nose_y": 789,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 8.68
  },
  "42378": {
   "corners": {
@@ -1262,86 +1262,86 @@
  "42380": {
   "corners": {
    "bottom_left": [
-    643,
-    798
+    606,
+    766
    ],
    "top_left": [
-    849,
-    733
+    794,
+    701
    ],
    "top_right": [
-    1051,
-    733
+    995,
+    701
    ],
    "bottom_right": [
-    1219,
-    798
+    1182,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": 0.27272727272727365,
+   "intercept": 713.4545454545449
   },
-  "nose_y": 815,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.683
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 33.995
  },
  "42381": {
   "corners": {
    "bottom_left": [
-    643,
-    798
+    577,
+    766
    ],
    "top_left": [
-    849,
-    733
+    786,
+    701
    ],
    "top_right": [
-    1051,
-    733
+    988,
+    701
    ],
    "bottom_right": [
-    1219,
-    798
+    1153,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.047058823529414665,
+   "intercept": 930.2470588235309
   },
-  "nose_y": 815,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.668
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 13.671
  },
  "42382": {
   "corners": {
    "bottom_left": [
-    643,
-    803
+    602,
+    767
    ],
    "top_left": [
-    849,
-    738
+    793,
+    702
    ],
    "top_right": [
-    1051,
-    738
+    994,
+    702
    ],
    "bottom_right": [
-    1219,
-    803
+    1178,
+    767
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": 0.2272727272727263,
+   "intercept": 744.2045454545456
   },
-  "nose_y": 820,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.787
+  "nose_y": 784,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 41.34
  },
  "42383": {
   "corners": {

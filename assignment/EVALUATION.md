@@ -54,7 +54,7 @@ Q3a, Q3b, and Q4 are graded on creativity and on rigor: at least 5 methods each,
 
 - **Seeds:** one seed, 42, passed through `--seed`. It is used by scikit-learn (`KMeans`, `RANSACRegressor`, `GaussianMixture`, `DecisionTreeClassifier`, `LogisticRegression`, `MLPClassifier`), by NumPy's `default_rng` for pixel sampling, by OpenCV k-means, and as the `seed` field of OpenAI requests. GPT-5 models accept neither `temperature` nor a guaranteed seed, so their replies can vary. Every reply is cached in `results/q3/proposals/`, and the reported results are reproduced exactly from the cache.
 - **Versions:** pinned in `uv.lock` (Python 3.12.12, OpenCV 5.0.0.93, NumPy 2.5.3, scikit-learn 1.9.1, openai 2.48+). External model: OpenAI `gpt-5.5` (Q3 M3 and M4 only).
-- **Repeated runs:** one run per method and video. All methods except the GPT ones are deterministic given the seed, so repeating them gives identical numbers. Re-running the GPT methods would cost new API calls; the account's credits ran out during Q3b. Run-to-run variation was therefore not measured as mean ± standard deviation. The closest evidence is the Q3 model comparison, where GPT-5.5 nose estimates stayed within about ±10 px across settings. This is a stated limitation.
+- **Repeated runs:** one run per method and video. All methods except the GPT ones are deterministic given the seed, so repeating them gives identical numbers. Re-running the GPT methods costs new API calls (the 146 calls that failed when the credits ran out during Q3b were completed in a second pass, but no full repeat was made). Run-to-run variation was therefore not measured as mean ± standard deviation. The closest evidence is the Q3 model comparison, where GPT-5.5 nose estimates stayed within about ±10 px across settings. This is a stated limitation.
 - **Leakage control:** supervised methods are trained leave-one-video-out (Q3 M5, Q4 M3–M5). Q4 white uses disjoint train and test frames of `vidd_1`, the only video with white paint.
 - **Outputs:** bulky intermediates go in `outputs/` (git-ignored). Tables, plots and per-run evidence go in `results/q2/`, `results/q3/`, `results/q4/` and `results/summary/`.
 
@@ -68,7 +68,7 @@ CBEM F1 is the ALINA metric vs. ground truth in %. `vidd_3` has no ground truth,
 |---|---|---|---|---|---|---|
 | Q2 (manual ROI) | – | Medium ROI (`vidd_2`), tight (`vidd_1`) | 23.8 (medium) | **91.6** (medium) | 0 (46 with loosened thresholds) | ROI size alone swings 0 → 47 frames |
 | Q3a (first-frame ROI) | Manual: 23.8 / 91.6 / 0 | **M1 Hough** (`vidd_1`, `vidd_3`), **M4 GPT points** (`vidd_2`) | **70.0** (M1) | 91.3 (M4) | 16 (M1) | Line-centred, shallow trapezoid from Q2 |
-| Q3b (every-frame ROI) | Same method, first frame | **M1 Hough** | **71.5** | 82.8 (M1); 90.8 (M4, partial) | **22** | Helps curves and bad first ROIs, not straight taxiways |
+| Q3b (every-frame ROI) | Same method, first frame | **M1 Hough** | **71.5** | 82.8 (M1); 91.0 (M4) | **22** | Helps curves and bad first ROIs, not straight taxiways |
 | Q4 (color step) | Hand-set HSV: 70.0 / 83.2 / 16 | **M5 MLP** for masks, **M3 tree** for explicit thresholds | 70.0 (baseline); 67.0 (MLP) | 83.2 (baseline); 81.9 (MLP) | **35** (tree, LogReg) | MLP: yellow mask F1 0.907, white 0.983; baseline white F1 0 |
 
 ### Plots

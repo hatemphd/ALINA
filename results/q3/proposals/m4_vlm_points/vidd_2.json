@@ -114,30 +114,30 @@
  "00005": {
   "corners": {
    "bottom_left": [
-    643,
-    799
+    577,
+    766
    ],
    "top_left": [
-    849,
-    734
+    786,
+    701
    ],
    "top_right": [
-    1051,
-    734
+    987,
+    701
    ],
    "bottom_right": [
-    1219,
-    799
+    1153,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.03529411764706147,
+   "intercept": 921.3352941176483
   },
-  "nose_y": 816,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.35
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 15.032
  },
  "00006": {
   "corners": {
@@ -170,114 +170,114 @@
  "00007": {
   "corners": {
    "bottom_left": [
-    643,
-    793
+    580,
+    763
    ],
    "top_left": [
-    849,
-    728
+    788,
+    698
    ],
    "top_right": [
-    1051,
-    728
+    990,
+    698
    ],
    "bottom_right": [
-    1219,
-    793
+    1156,
+    763
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.0416607623636093,
+   "intercept": 928.28319399178
   },
-  "nose_y": 810,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.387
+  "nose_y": 780,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 14.343
  },
  "00008": {
   "corners": {
    "bottom_left": [
-    643,
-    798
+    580,
+    766
    ],
    "top_left": [
-    849,
-    733
+    787,
+    701
    ],
    "top_right": [
-    1051,
-    733
+    989,
+    701
    ],
    "bottom_right": [
-    1219,
-    798
+    1156,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.016851805099721524,
+   "intercept": 909.9152991668766
   },
-  "nose_y": 815,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.536
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 35.039
  },
  "00009": {
   "corners": {
    "bottom_left": [
-    643,
-    792
+    579,
+    766
    ],
    "top_left": [
-    849,
-    727
+    787,
+    701
    ],
    "top_right": [
-    1051,
-    727
+    988,
+    701
    ],
    "bottom_right": [
-    1219,
-    792
+    1155,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.02285490400940305,
+   "intercept": 913.7229332636805
   },
-  "nose_y": 809,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.389
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 8.088
  },
  "00010": {
   "corners": {
    "bottom_left": [
-    643,
-    797
+    578,
+    763
    ],
    "top_left": [
-    849,
-    732
+    788,
+    698
    ],
    "top_right": [
-    1051,
-    732
+    990,
+    698
    ],
    "bottom_right": [
-    1219,
-    797
+    1154,
+    763
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.06250000000000018,
+   "intercept": 942.7499999999999
   },
-  "nose_y": 814,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 2.058
+  "nose_y": 780,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 20.717
  },
  "00011": {
   "corners": {
@@ -338,58 +338,58 @@
  "00013": {
   "corners": {
    "bottom_left": [
-    643,
-    792
+    580,
+    761
    ],
    "top_left": [
-    849,
-    727
+    788,
+    696
    ],
    "top_right": [
-    1051,
-    727
+    990,
+    696
    ],
    "bottom_right": [
-    1219,
-    792
+    1156,
+    761
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.030262964595266464,
+   "intercept": 920.0888056412498
   },
-  "nose_y": 809,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.731
+  "nose_y": 778,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 14.588
  },
  "00014": {
   "corners": {
    "bottom_left": [
-    643,
-    780
+    580,
+    766
    ],
    "top_left": [
-    849,
-    715
+    788,
+    701
    ],
    "top_right": [
-    1051,
-    715
+    990,
+    701
    ],
    "bottom_right": [
-    1219,
-    780
+    1156,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.029686835765906618,
+   "intercept": 919.9396698313733
   },
-  "nose_y": 797,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.753
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 14.32
  },
  "00015": {
   "corners": {
@@ -422,30 +422,30 @@
  "00016": {
   "corners": {
    "bottom_left": [
-    643,
-    782
+    580,
+    767
    ],
    "top_left": [
-    849,
-    717
+    786,
+    702
    ],
    "top_right": [
-    1051,
-    717
+    988,
+    702
    ],
    "bottom_right": [
-    1219,
-    782
+    1156,
+    767
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -1.1793334707319167e-15,
+   "intercept": 897.0000000000003
   },
-  "nose_y": 799,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.74
+  "nose_y": 784,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 14.414
  },
  "00017": {
   "corners": {
@@ -506,58 +506,58 @@
  "00019": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    582,
+    766
    ],
    "top_left": [
-    849,
-    730
+    787,
+    701
    ],
    "top_right": [
-    1051,
-    730
+    989,
+    701
    ],
    "bottom_right": [
-    1219,
-    795
+    1158,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": 0.008695652173913633,
+   "intercept": 891.9782608695645
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.93
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 7.763
  },
  "00020": {
   "corners": {
    "bottom_left": [
-    643,
-    783
+    581,
+    766
    ],
    "top_left": [
-    849,
-    718
+    788,
+    701
    ],
    "top_right": [
-    1051,
-    718
+    989,
+    701
    ],
    "bottom_right": [
-    1219,
-    783
+    1157,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.013862781954886366,
+   "intercept": 908.1604088345855
   },
-  "nose_y": 800,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.841
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 8.384
  },
  "03650": {
   "corners": {
@@ -590,58 +590,58 @@
  "03651": {
   "corners": {
    "bottom_left": [
-    643,
-    800
+    574,
+    763
    ],
    "top_left": [
-    849,
-    735
+    791,
+    698
    ],
    "top_right": [
-    1051,
-    735
+    993,
+    698
    ],
    "bottom_right": [
-    1219,
-    800
+    1150,
+    763
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.1665944540727891,
+   "intercept": 1018.3479202772951
   },
-  "nose_y": 817,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.851
+  "nose_y": 780,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 8.302
  },
  "03652": {
   "corners": {
    "bottom_left": [
-    643,
-    800
+    571,
+    766
    ],
    "top_left": [
-    849,
-    735
+    793,
+    701
    ],
    "top_right": [
-    1051,
-    735
+    995,
+    701
    ],
    "bottom_right": [
-    1219,
-    800
+    1147,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.25495942290351764,
+   "intercept": 1082.9945897204693
   },
-  "nose_y": 817,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.84
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 18.176
  },
  "03653": {
   "corners": {
@@ -674,58 +674,58 @@
  "03654": {
   "corners": {
    "bottom_left": [
-    643,
-    801
+    492,
+    763
    ],
    "top_left": [
-    849,
-    736
+    686,
+    698
    ],
    "top_right": [
-    1051,
-    736
+    888,
+    698
    ],
    "bottom_right": [
-    1219,
-    801
+    1068,
+    763
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": 0.17466852333959082,
+   "intercept": 675.4350971726092
   },
-  "nose_y": 818,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.817
+  "nose_y": 780,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 34.868
  },
  "03655": {
   "corners": {
    "bottom_left": [
-    643,
-    801
+    572,
+    763
    ],
    "top_left": [
-    849,
-    736
+    787,
+    698
    ],
    "top_right": [
-    1051,
-    736
+    989,
+    698
    ],
    "bottom_right": [
-    1219,
-    801
+    1148,
+    763
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.1400000000000041,
+   "intercept": 996.0000000000022
   },
-  "nose_y": 818,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.861
+  "nose_y": 780,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 8.225
  },
  "03656": {
   "corners": {
@@ -758,170 +758,170 @@
  "03657": {
   "corners": {
    "bottom_left": [
-    643,
-    794
+    576,
+    761
    ],
    "top_left": [
-    849,
-    729
+    791,
+    696
    ],
    "top_right": [
-    1051,
-    729
+    993,
+    696
    ],
    "bottom_right": [
-    1219,
-    794
+    1152,
+    761
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.14751381215469622,
+   "intercept": 1004.6312154696133
   },
-  "nose_y": 811,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.751
+  "nose_y": 778,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 23.121
  },
  "03658": {
   "corners": {
    "bottom_left": [
-    643,
-    801
+    576,
+    785
    ],
    "top_left": [
-    849,
-    736
+    791,
+    720
    ],
    "top_right": [
-    1051,
-    736
+    993,
+    720
    ],
    "bottom_right": [
-    1219,
-    801
+    1152,
+    785
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.1315688235746713,
+   "intercept": 996.5452027390935
   },
-  "nose_y": 818,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.792
+  "nose_y": 802,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 20.687
  },
  "03659": {
   "corners": {
    "bottom_left": [
-    643,
-    800
+    571,
+    771
    ],
    "top_left": [
-    849,
-    735
+    788,
+    706
    ],
    "top_right": [
-    1051,
-    735
+    990,
+    706
    ],
    "bottom_right": [
-    1219,
-    800
+    1147,
+    771
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.1731917392580999,
+   "intercept": 1021.4852451796027
   },
-  "nose_y": 817,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.782
+  "nose_y": 788,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 32.35
  },
  "03660": {
   "corners": {
    "bottom_left": [
-    643,
-    800
+    570,
+    811
    ],
    "top_left": [
-    849,
-    735
+    786,
+    746
    ],
    "top_right": [
-    1051,
-    735
+    988,
+    746
    ],
    "bottom_right": [
-    1219,
-    800
+    1146,
+    811
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.16481512652191002,
+   "intercept": 1020.2652331257362
   },
-  "nose_y": 817,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.716
+  "nose_y": 828,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 42.876
  },
  "03661": {
   "corners": {
    "bottom_left": [
-    643,
-    799
+    570,
+    766
    ],
    "top_left": [
-    849,
-    734
+    788,
+    701
    ],
    "top_right": [
-    1051,
-    734
+    989,
+    701
    ],
    "bottom_right": [
-    1219,
-    799
+    1146,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.1818181818181807,
+   "intercept": 1026.1636363636358
   },
-  "nose_y": 816,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.845
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 24.501
  },
  "03662": {
   "corners": {
    "bottom_left": [
-    643,
-    799
+    573,
+    765
    ],
    "top_left": [
-    849,
-    734
+    787,
+    700
    ],
    "top_right": [
-    1051,
-    734
+    988,
+    700
    ],
    "bottom_right": [
-    1219,
-    799
+    1149,
+    765
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.12316800931767394,
+   "intercept": 983.9548675143157
   },
-  "nose_y": 816,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.75
+  "nose_y": 782,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 26.378
  },
  "03663": {
   "corners": {
@@ -982,86 +982,86 @@
  "03665": {
   "corners": {
    "bottom_left": [
-    643,
-    798
+    579,
+    766
    ],
    "top_left": [
-    849,
-    733
+    793,
+    701
    ],
    "top_right": [
-    1051,
-    733
+    995,
+    701
    ],
    "bottom_right": [
-    1219,
-    798
+    1155,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.12500000000000058,
+   "intercept": 991.8750000000002
   },
-  "nose_y": 815,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.878
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 13.985
  },
  "03666": {
   "corners": {
    "bottom_left": [
-    643,
-    790
+    575,
+    766
    ],
    "top_left": [
-    849,
-    725
+    792,
+    701
    ],
    "top_right": [
-    1051,
-    725
+    993,
+    701
    ],
    "bottom_right": [
-    1219,
-    790
+    1151,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.1578947368421069,
+   "intercept": 1013.1315789473695
   },
-  "nose_y": 807,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.773
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 19.217
  },
  "03667": {
   "corners": {
    "bottom_left": [
-    643,
-    797
+    573,
+    766
    ],
    "top_left": [
-    849,
-    732
+    789,
+    701
    ],
    "top_right": [
-    1051,
-    732
+    990,
+    701
    ],
    "bottom_right": [
-    1219,
-    797
+    1149,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.14705882352941274,
+   "intercept": 1002.5470588235298
   },
-  "nose_y": 814,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.829
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 20.778
  },
  "03668": {
   "corners": {
@@ -1094,30 +1094,30 @@
  "03669": {
   "corners": {
    "bottom_left": [
-    643,
-    797
+    572,
+    766
    ],
    "top_left": [
-    849,
-    732
+    793,
+    701
    ],
    "top_right": [
-    1051,
-    732
+    995,
+    701
    ],
    "bottom_right": [
-    1219,
-    797
+    1148,
+    766
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -0.2388888888888893,
+   "intercept": 1071.7500000000002
   },
-  "nose_y": 814,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.863
+  "nose_y": 783,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 25.494
  },
  "03670": {
   "corners": {
@@ -1172,36 +1172,36 @@
   },
   "nose_y": 816,
   "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.923
+  "note": "unusable ROI (VLM points)",
+  "seconds": 41.145
  },
  "05605": {
   "corners": {
    "bottom_left": [
-    643,
-    805
+    668,
+    845
    ],
    "top_left": [
-    849,
-    740
+    1031,
+    780
    ],
    "top_right": [
-    1051,
-    740
+    1233,
+    780
    ],
    "bottom_right": [
-    1219,
-    805
+    1244,
+    845
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -2.413551826497852,
+   "intercept": 3024.5758011752614
   },
-  "nose_y": 822,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.75
+  "nose_y": 862,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 55.129
  },
  "05606": {
   "corners": {
@@ -1228,64 +1228,64 @@
   },
   "nose_y": 816,
   "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.85
+  "note": "unusable ROI (VLM points)",
+  "seconds": 57.435
  },
  "05607": {
   "corners": {
    "bottom_left": [
-    643,
-    795
+    735,
+    827
    ],
    "top_left": [
-    849,
-    730
+    1070,
+    762
    ],
    "top_right": [
-    1051,
-    730
+    1272,
+    762
    ],
    "bottom_right": [
-    1219,
-    795
+    1311,
+    827
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -1.990690219615339,
+   "intercept": 2697.9054017187336
   },
-  "nose_y": 812,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.915
+  "nose_y": 844,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 33.363
  },
  "05608": {
   "corners": {
    "bottom_left": [
-    643,
-    797
+    719,
+    845
    ],
    "top_left": [
-    849,
-    732
+    1032,
+    780
    ],
    "top_right": [
-    1051,
-    732
+    1234,
+    780
    ],
    "bottom_right": [
-    1219,
-    797
+    1295,
+    845
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -1.6531631520532761,
+   "intercept": 2432.6457269700345
   },
-  "nose_y": 814,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.818
+  "nose_y": 862,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 44.308
  },
  "05609": {
   "corners": {
@@ -1312,36 +1312,36 @@
   },
   "nose_y": 814,
   "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.942
+  "note": "unusable ROI (VLM points)",
+  "seconds": 58.327
  },
  "05610": {
   "corners": {
    "bottom_left": [
-    643,
-    796
+    745,
+    847
    ],
    "top_left": [
-    849,
-    731
+    1059,
+    782
    ],
    "top_right": [
-    1051,
-    731
+    1260,
+    782
    ],
    "bottom_right": [
-    1219,
-    796
+    1321,
+    847
    ]
   },
   "line": {
-   "slope": 0.0,
-   "intercept": 960.0
+   "slope": -1.6540565177757482,
+   "intercept": 2463.0068368277093
   },
-  "nose_y": 813,
-  "fallback": true,
-  "note": "VLM error: RateLimitError",
-  "seconds": 1.767
+  "nose_y": 864,
+  "fallback": false,
+  "note": "VLM points",
+  "seconds": 37.633
  },
  "05611": {
   "corners": {

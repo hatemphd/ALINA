@@ -136,42 +136,49 @@ Bird's-eye view and mask for the best method on each video:
 - **Frames:** all 50 frames of each video. The 50 frames are sparse samples from long recordings (for example `vidd_1` jumps from frame 00007 to 01063), so consecutive frames can show quite different scenes; temporal smoothing across those gaps would not be meaningful, so none is applied.
 - **ROI change between frames:** mean corner movement (px) and mean IoU with the previous frame's ROI.
 
-### Data caveat: the GPT methods are partial
+### Data note: the GPT calls were completed in a second pass
 
-The OpenAI account ran out of credits during the every-frame run (`insufficient_quota`), and 146 of the 300 GPT-5.5 calls failed. Those frames are **left out of every metric** for the GPT methods. So M3 is scored on 50, 17 and 18 frames (`vidd_1`, `vidd_2`, `vidd_3`), and M4 on 33, 19 and 17. To compare like with like, the GPT rows below score the first-frame run on exactly the same frames. The cache keeps only real replies, so adding credits and re-running `q3_auto_roi --modes every-frame` completes them without repeating any call.
+The OpenAI account ran out of credits during the first every-frame run (`RateLimitError` / `insufficient_quota`), and 146 of the 300 GPT-5.5 calls failed. Failed calls are not cached, so after credits were added the same command filled in exactly those frames, reusing the 154 cached replies:
+
+```bash
+uv run python -m experiments.q3_auto_roi --methods m3_vlm_corners m4_vlm_points --modes every-frame --vlm-workers 3
+uv run python -m experiments.q3_score
+```
+
+All 300 calls now have a real reply, and every GPT row is scored on all 50 frames. Eight replies (M4: 3 on `vidd_2`, 5 on `vidd_3`) gave points that could not form a usable ROI, so the sanity check replaced them with the fallback; they are counted under "Fallbacks". The log is in `results/q3/logs/`.
 
 ### Results
 
-From [`results/q3/summary.csv`](../results/q3/summary.csv). "First → every" shows the first-frame value, then the every-frame value, on the same frames. CBEM F1 is accuracy (`vidd_1` and `vidd_2` only); published-label F1 is agreement with the authors' labeling.
+From [`results/q3/summary.csv`](../results/q3/summary.csv). "First → every" shows the first-frame value, then the every-frame value, on all 50 frames. CBEM F1 is accuracy (`vidd_1` and `vidd_2` only); published-label F1 is agreement with the authors' labeling.
 
 | Video | Method | Frames scored | Frames labeled (first → every) | CBEM F1 (first → every) | Published-label F1 (first → every) | Fallbacks (every) | ROI jitter, px | ROI time per frame (s) |
 |---|---|---|---|---|---|---|---|---|
 | vidd_1 | M1 Hough | 50 | 45 → 47 | 70.0 → **71.5** | 62.3 → 64.8 | 0 | 41 | 0.04 |
 | vidd_1 | M2 K-means | 50 | 20 → 47 | 15.9 → 38.5 | 7.5 → 50.3 | 0 | 49 | 0.23 |
 | vidd_1 | M3 VLM corners | 50 | 20 → 47 | 13.2 → 25.1 | 5.8 → 40.2 | 0 | 54 | 14.9 |
-| vidd_1 | M4 VLM points (partial) | 33 | 23 → 31 | 64.2 → 56.8 | 47.2 → 55.1 | 0 | 87 | 35.6 |
+| vidd_1 | M4 VLM points | 50 | 25 → 45 | 64.2 → 56.8 | 32.5 → 56.5 | 0 | 61 | 29.0 |
 | vidd_1 | M5 Ridge | 50 | 43 → 32 | 25.0 → 26.5 | 38.8 → 24.8 | 35 | 112 | 0.19 |
 | vidd_2 | M1 Hough | 50 | 39 → 37 | 83.2 → 82.8 | 68.7 → 65.7 | 3 | 37 | 0.04 |
 | vidd_2 | M2 K-means | 50 | 39 → 40 | 83.4 → 82.8 | 68.9 → 66.9 | 7 | 33 | 0.19 |
-| vidd_2 | M3 VLM corners (partial) | 17 | 13 → 14 | 88.6 → 88.2 | 76.6 → 82.4 | 0 | 53 | 20.7 |
-| vidd_2 | M4 VLM points (partial) | 19 | 16 → 17 | 90.6 → **90.8** | 84.8 → 84.0 | 0 | 37 | 20.4 |
+| vidd_2 | M3 VLM corners | 50 | 39 → 40 | 88.6 → 89.0 | 76.0 → **77.5** | 0 | 40 | 21.7 |
+| vidd_2 | M4 VLM points | 50 | 39 → 40 | **91.3** → **91.0** | 77.5 → 76.9 | 3 | 34 | 23.7 |
 | vidd_2 | M5 Ridge | 50 | 38 → 35 | 82.7 → 82.4 | 67.1 → 60.3 | 0 | 11 | 0.20 |
 | vidd_3 | M1 Hough | 50 | 16 → **22** | – | 32.8 → **45.4** | 10 | 130 | 0.04 |
 | vidd_3 | M2 K-means | 50 | 0 → 13 | – | 0.0 → 26.6 | 32 | 46 | 0.25 |
-| vidd_3 | M3 VLM corners (partial) | 18 | 0 → 11 | – | 0.0 → 25.8 | 0 | 329 | 29.5 |
-| vidd_3 | M4 VLM points (partial) | 17 | 0 → 9 | – | 0.0 → 25.3 | 3 | 117 | 35.3 |
+| vidd_3 | M3 VLM corners | 50 | 0 → **26** | – | 0.0 → 25.9 | 0 | 209 | 32.0 |
+| vidd_3 | M4 VLM points | 50 | 0 → 22 | – | 0.0 → 18.0 | 5 | 89 | 44.8 |
 | vidd_3 | M5 Ridge | 50 | 0 → 0 | – | 0.0 → 0.0 | 0 | 9 | 0.20 |
 
-The M4 `vidd_2` CBEM comparison rests on 5 ground-truth frames, and M3 `vidd_2` on 5; the rest use 7 or 10. ROI jitter is the mean movement of the four corners between consecutive scored frames.
+CBEM F1 uses 7 ground-truth frames for `vidd_1` and 10 for `vidd_2`. ROI jitter is the mean movement of the four corners between consecutive scored frames.
 
 ### Answer
 
 - **Does per-frame ROI improve performance?** Only where the first-frame ROI was poor or the scene changes; not for a good ROI on a straight taxiway.
   - **It helps when the first ROI was wrong.** On `vidd_1`, M2 and M3 had centred on the wrong yellow line in frame 1. Re-proposing lets them recover: CBEM F1 15.9 → 38.5 and 13.2 → 25.1, with frames labeled 20 → 47.
-  - **It helps on the curved `vidd_3`.** A fixed ROI from frame 1 misses the curve as it moves. Every method except Ridge goes from 0–16 frames labeled to 9–22, and M1 Hough reaches 22 frames with agreement 32.8 → 45.4.
-  - **It doesn't help a good ROI on a straight taxiway.** On `vidd_2` every method stays within about 1 CBEM point (for example M4 90.6 → 90.8, M1 83.2 → 82.8). The best `vidd_1` methods barely move or get worse: M1 70.0 → 71.5, M4 64.2 → 56.8.
+  - **It helps on the curved `vidd_3`.** A fixed ROI from frame 1 misses the curve as it moves. Every method except Ridge goes from 0–16 frames labeled to 13–26. M3 GPT corners labels the most frames (26), but M1 Hough agrees far better with the published labels (22 frames, agreement 32.8 → 45.4, vs. 25.9 for M3).
+  - **It doesn't help a good ROI on a straight taxiway.** On `vidd_2` every method stays within about 1 CBEM point (for example M4 91.3 → 91.0, M3 88.6 → 89.0, M1 83.2 → 82.8). The best `vidd_1` methods barely move or get worse: M1 70.0 → 71.5, M4 64.2 → 56.8.
   - **It amplifies a weak method.** M5 Ridge falls back on 35 of 50 `vidd_1` frames and labels fewer frames (43 → 32).
 - **Cost:**
   - **Time and money:** ROI proposal moves from once per video to once per frame, 50 times as often. That's negligible for M1, M2 and M5 (under 0.3 s), but for GPT-5.5 it's 15–36 s and one paid API call per frame, about 300 calls for the three videos.
-  - **Jitter:** the ROI moves 33–130 px per frame on average for the classical and supervised methods, and up to 329 px for M3 on `vidd_3`. The 50 frames are sparse samples, so some of that movement is real scene change, not noise.
-- **Overall:** the best automated setup per video is the same in both modes: M1 Hough for `vidd_1` and `vidd_3`, M4 VLM points for `vidd_2`. Per-frame ROI is worth it for curves and scene changes, and should be paired with a sanity check (here, `sanitize` plus a fallback), because one bad frame can produce a collapsed trapezoid.
+  - **Jitter:** the ROI moves 33–130 px per frame on average for the classical and supervised methods, and up to 209 px for M3 on `vidd_3`. The 50 frames are sparse samples, so some of that movement is real scene change, not noise.
+- **Overall:** the best automated setup per video is the same in both modes: M1 Hough for `vidd_1` and `vidd_3`, M4 VLM points for `vidd_2` (on `vidd_3`, M3 labels a few more frames per-frame, but with much lower agreement than Hough). Per-frame ROI is worth it for curves and scene changes, and should be paired with a sanity check (here, `sanitize` plus a fallback), because one bad frame can produce a collapsed trapezoid.

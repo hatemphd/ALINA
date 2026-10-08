@@ -18,7 +18,7 @@ The brief asks for at least 5 methods per question and rewards both creativity a
 
 Two practical limits shaped the choices:
 - No PyTorch on this Intel Mac, so neural networks are small scikit-learn models.
-- The OpenAI credits ran out during Q3, so Q4 uses only methods that run on a laptop CPU.
+- The OpenAI credits ran out during Q3 (the failed calls were completed later), so Q4 was designed around methods that run on a laptop CPU.
 
 At least one method per question gives readable output a person can check: Hough lines in Q3, decision-tree boxes in Q4.
 

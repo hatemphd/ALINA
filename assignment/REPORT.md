@@ -141,7 +141,7 @@ The OpenAI key for new GPT calls goes in `.env` (git-ignored; template `.env.exa
 | Model selection for the GPT methods | – | `gpt-4.1`, `gpt-5.4-mini`, `gpt-5.5`, with and without a labelled pixel grid, on the three first frames |
 
 - **Frames:** every run covers all 50 frames per video.
-- **GPT credits:** they ran out during Q3b. 146 of 300 GPT calls failed, and those frames are excluded from the GPT every-frame scores (marked "partial").
+- **GPT credits:** they ran out during the first Q3b pass, and 146 of 300 GPT calls failed. Failed calls are not cached, so after credits were added a second pass filled in exactly those frames. All 300 calls now have a real reply, and every GPT row is scored on all 50 frames.
 
 ---
 
@@ -200,13 +200,16 @@ The OpenAI key for new GPT calls goes in `.env` (git-ignored; template `.env.exa
 | `vidd_1` | M3 GPT corners | 20 → 47 | 13.2 → 25.1 | 54 |
 | `vidd_1` | M5 Ridge | 43 → 32 | 25.0 → 26.5 | 112 |
 | `vidd_2` | M1 Hough | 39 → 37 | 83.2 → 82.8 | 37 |
-| `vidd_2` | M4 GPT points (partial) | 16 → 17 | 90.6 → 90.8 | 37 |
-| `vidd_3` | M1 Hough | 16 → **22** | – | 130 |
+| `vidd_2` | M3 GPT corners | 39 → 40 | 88.6 → 89.0 | 40 |
+| `vidd_2` | M4 GPT points | 39 → 40 | 91.3 → 91.0 | 34 |
+| `vidd_3` | M1 Hough | 16 → 22 | – | 130 |
 | `vidd_3` | M2 K-means | 0 → 13 | – | 46 |
+| `vidd_3` | M3 GPT corners | 0 → **26** | – | 209 |
+| `vidd_3` | M4 GPT points | 0 → 22 | – | 89 |
 
 **Per-frame ROI helps sometimes:**
 - **It helps when the first ROI was wrong:** M2 and M3 recover from the wrong line on `vidd_1`.
-- **It helps on curves:** `vidd_3` went from 0–16 to 9–22 frames.
+- **It helps on curves:** `vidd_3` went from 0–16 to 13–26 frames. M3 labels the most (26), but Hough agrees far better with the published labels (45.4 vs. 25.9).
 - **It does nothing for a good ROI on a straight taxiway:** `vidd_2` moved within about 1 point.
 - **It amplifies a weak method:** Ridge fell back on 35/50 frames.
 - **Cost:** for GPT, one paid call of 15–36 s per frame.
@@ -277,7 +280,7 @@ All rows: [Q3_AUTO_ROI.md](Q3_AUTO_ROI.md#q3b-automated-roi-on-every-frame-5-poi
   - `vidd_1`'s 7 frames contain only 2 distinct tracings, and most cover only one of its two yellow lines.
 - **Weak training labels.** The published labels used for training (Q3 M5, Q4 M3–M5) and for the agreement metric are the authors' ALINA output, not independent truth.
 - **Thin white evidence.** White paint appears inside an ROI only in `vidd_1`, so the white labels come from one hand-traced stripe (3 training, 5 test frames). The white results show feasibility, not a general white detector.
-- **Partial GPT results and no repeated runs.** The OpenAI credits ran out during Q3b, so the GPT every-frame results cover only frames with a real reply. Each method was run once. All methods except GPT are deterministic, but run-to-run variance (mean ± std) was not measured for GPT.
+- **No repeated runs.** Each method was run once. (The GPT every-frame results were completed in a second pass after the credits ran out mid-run; see section 3.) All methods except GPT are deterministic, but run-to-run variance (mean ± std) was not measured for GPT.
 - **No CNN or segmentation foundation model.** PyTorch is not available on this Intel Mac, so the neural network is a small MLP with hand-built neighborhood features. A segmentation foundation model was not tried (no GPU, no credits).
 - **Lenient metric.** ALINA's metric matches x and y values separately. The Q4 pixel-level metrics are stricter but only cover yellow and white masks, not the final labels.
 - **Timing is noisy and dominated by CIRCLEDAT.** Runs were parallel on 12 CPUs, which inflates per-run times (equally across methods).

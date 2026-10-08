@@ -19,7 +19,7 @@ Scores below use ALINA's metric against the CBEM ground truth (F1 in %). Only `v
 | Video | Manual ROI (Q2) | Best automated, first frame | Same method, every frame |
 |---|---|---|---|
 | `vidd_1` | 23.8 | **70.0** (Hough) | 71.5 |
-| `vidd_2` | **91.6** | 91.3 (GPT points) | 90.8 (partial) |
+| `vidd_2` | **91.6** | 91.3 (GPT points) | 91.0 |
 | `vidd_3` | 0 of 50 frames | **16** (Hough) | **22** |
 
 **Conclusion.**

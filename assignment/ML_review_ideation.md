@@ -290,7 +290,7 @@ These ideas follow from what the Q3 and Q4 results showed. "Tested" means the id
 |---|---|---|
 | Polynomial (curved) RANSAC fit | `vidd_3` curves; straight-line models fail there | Not tested |
 | Tracking the ROI across frames (Kalman filter) | The line moves smoothly; tracking would replace "find from scratch" every frame and fill gaps | Not tested |
-| Hough + GPT-5.5 ensemble | Use Hough when it is confident and ask the model only when it isn't, cutting cost and failures | Not tested (no API credits) |
+| Hough + GPT-5.5 ensemble | Use Hough when it is confident and ask the model only when it isn't, cutting cost and failures | Not tested |
 | Self-training Ridge/CNN on Hough outputs | Gives the supervised method many more (weak) labels than two videos of published labels | Not tested |
 | Segment-anything style model (e.g. SAM) prompted with points | A promptable segmenter could outline the line exactly from M4's points | Not tested (no PyTorch) |
 
